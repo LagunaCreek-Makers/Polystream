@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "start_year": 2017,
+  "end_year": 2026,
+  "generated_utc": "2026-10-19T20:09:05.079420+00:00",
+  "conferences": [
+    {
+      "year": 2017,
+      "month": "04",
+      "listed_entries": 39,
+      "trilingual_talks_with_candidates": 39,
+      "candidate_paragraphs": 1198
+    },
+    {
+      "year": 2017,
+      "month": "10",
+      "listed_entries": 36,
+      "trilingual_talks_with_candidates": 36,
+      "candidate_paragraphs": 1214
+    },
+    {
+      "year": 2018,
+      "month": "04",
+      "listed_entries": 38,
+      "trilingual_talks_with_candidates": 38,
+      "candidate_paragraphs": 1180
+    },
+    {
+      "year": 2018,
+      "month": "10",
+      "listed_entries": 34,
+      "trilingual_talks_with_candidates": 34,
+      "candidate_paragraphs": 1047
+    },
+    {
+      "year": 2019,
+      "month": "04",
+      "listed_entries": 33,
+      "trilingual_talks_with_candidates": 33,
+      "candidate_paragraphs": 981
+    },
+    {
+      "year": 2019,
+      "month": "10",
+      "listed_entries": 35,
+      "trilingual_talks_with_candidates": 35,
+      "candidate_paragraphs": 1127
+    },
+    {
+      "year": 2020,
+      "month": "04",
+      "listed_entries": 35,
+      "trilingual_talks_with_candidates": 35,
+      "candidate_paragraphs": 991
+    },
+    {
+      "year": 2020,
+      "month": "10",
+      "listed_entries": 36,
+      "trilingual_talks_with_candidates": 35,
+      "candidate_paragraphs": 1059
+    },
+    {
+      "year": 2021,
+      "month": "04",
+      "listed_entries": 37,
+      "trilingual_talks_with_candidates": 37,
+      "candidate_paragraphs": 1069
+    },
+    {
+      "year": 2021,
+      "month": "10",
+      "listed_entries": 40,
+      "trilingual_talks_with_candidates": 40,
+      "candidate_paragraphs": 1068
+    },
+    {
+      "year": 2022,
+      "month": "04",
+      "listed_entries": 38,
+      "trilingual_talks_with_candidates": 38,
+      "candidate_paragraphs": 1128
+    },
+    {
+      "year": 2022,
+      "month": "10",
+      "listed_entries": 36,
+      "trilingual_talks_with_candidates": 36,
+      "candidate_paragraphs": 1006
+    },
+    {
+      "year": 2023,
+      "month": "04",
+      "listed_entries": 35,
+      "trilingual_talks_with_candidates": 35,
+      "candidate_paragraphs": 1065
+    },
+    {
+      "year": 2023,
+      "month": "10",
+      "listed_entries": 33,
+      "trilingual_talks_with_candidates": 33,
+      "candidate_paragraphs": 1057
+    },
+    {
+      "year": 2024,
+      "month": "04",
+      "listed_entries": 34,
+      "trilingual_talks_with_candidates": 34,
+      "candidate_paragraphs": 1034
+    },
+    {
+      "year": 2024,
+      "month": "10",
+      "listed_entries": 35,
+      "trilingual_talks_with_candidates": 35,
+      "candidate_paragraphs": 1012
+    },
+    {
+      "year": 2025,
+      "month": "04",
+      "listed_entries": 34,
+      "trilingual_talks_with_candidates": 34,
+      "candidate_paragraphs": 1049
+    },
+    {
+      "year": 2025,
+      "month": "10",
+      "listed_entries": 35,
+      "trilingual_talks_with_candidates": 35,
+      "candidate_paragraphs": 966
+    },
+    {
+      "year": 2026,
+      "month": "04",
+      "listed_entries": 37,
+      "trilingual_talks_with_candidates": 37,
+      "candidate_paragraphs": 953
+    },
+    {
+      "year": 2026,
+      "month": "10",
+      "listed_entries": 38,
+      "trilingual_talks_with_candidates": 38,
+      "candidate_paragraphs": 968
+    }
+  ],
+  "failures": [],
+  "text_inference_cases_completed": 0,
+  "audio_cases_completed": 0,
+  "excluded_entries": [
+    {
+      "path": "/study/general-conference/2020/10/33video",
+      "reason": "Video presentation: no page transcript. Official source: https://www.churchofjesuschrist.org/study/general-conference/2020/10/33video?lang=eng"
+    }
+  ],
+  "candidate_paragraphs": 21172,
+  "pages_expected": 2151,
+  "pages_cached": 2151,
+  "interrupted": false,
+  "complete_download": true
+}

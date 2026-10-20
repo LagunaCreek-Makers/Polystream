@@ -1,0 +1,18 @@
+[
+  {
+    "id": "gc-2021-04-222167f8953f-p4-de-es",
+    "source": "de",
+    "target": "es",
+    "error": "Local translation timed out: deadline has elapsed",
+    "source_url": "https://www.churchofjesuschrist.org/study/general-conference/2021/04/34eyring?lang=deu#p4",
+    "reference_url": "https://www.churchofjesuschrist.org/study/general-conference/2021/04/34eyring?lang=spa#p4"
+  },
+  {
+    "id": "gc-2025-10-8af98f29e02f-p_rnoSi-de-es",
+    "source": "de",
+    "target": "es",
+    "error": "Local translation timed out: deadline has elapsed",
+    "source_url": "https://www.churchofjesuschrist.org/study/general-conference/2025/10/33barlow?lang=deu#p_rnoSi",
+    "reference_url": "https://www.churchofjesuschrist.org/study/general-conference/2025/10/33barlow?lang=spa#p_rnoSi"
+  }
+]

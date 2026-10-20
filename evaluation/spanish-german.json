@@ -1,0 +1,10 @@
+[
+  {"id":"en-es-negation","source":"en","target":"es","text":"Do not open the door until the meeting is over.","reference_translation":"No abra la puerta hasta que termine la reunión."},
+  {"id":"en-de-negation","source":"en","target":"de","text":"Do not open the door until the meeting is over.","reference_translation":"Öffnen Sie die Tür erst, wenn die Besprechung vorbei ist."},
+  {"id":"es-de-time","source":"es","target":"de","text":"La reunión comienza a las nueve y media. Por favor, llegue diez minutos antes.","reference_translation":"Die Besprechung beginnt um halb zehn. Bitte kommen Sie zehn Minuten früher."},
+  {"id":"de-es-time","source":"de","target":"es","text":"Die Besprechung beginnt um halb zehn. Bitte kommen Sie zehn Minuten früher.","reference_translation":"La reunión comienza a las nueve y media. Por favor, llegue diez minutos antes."},
+  {"id":"es-de-numbers","source":"es","target":"de","text":"Necesitamos quince sillas, no cincuenta.","reference_translation":"Wir brauchen fünfzehn Stühle, nicht fünfzig."},
+  {"id":"de-es-numbers","source":"de","target":"es","text":"Wir brauchen fünfzehn Stühle, nicht fünfzig.","reference_translation":"Necesitamos quince sillas, no cincuenta."},
+  {"id":"es-de-name","source":"es","target":"de","text":"María López llegará mañana desde Madrid.","reference_translation":"María López kommt morgen aus Madrid an."},
+  {"id":"de-es-name","source":"de","target":"es","text":"María López kommt morgen aus Madrid an.","reference_translation":"María López llegará mañana desde Madrid."}
+]

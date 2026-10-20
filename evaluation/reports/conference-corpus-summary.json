@@ -1,0 +1,24 @@
+{
+  "conferences": 20,
+  "indexed_entries": 718,
+  "trilingual_prose_entries": 717,
+  "excluded_video_entries": 1,
+  "candidate_paragraphs": 21172,
+  "direction_cases": 84688,
+  "split_candidate_paragraphs": {
+    "train": 15190,
+    "dev": 2046,
+    "test": 3936
+  },
+  "maximum_language_paragraph_chars_p50": 305.0,
+  "maximum_language_paragraph_chars_p95": 765,
+  "simulated_exact_source_cache_hits_64_by_language": {
+    "en": 112,
+    "es": 129,
+    "de": 192
+  },
+  "simulation_cases_per_language": 21172,
+  "cache_simulation_is_not_observed_app_performance": true,
+  "alignment_reviewed": false,
+  "corpus_sha256": "801f805d97e306762013b4f3b8b45d30843be4ac0cdaa0ede8a09904be47bf85"
+}

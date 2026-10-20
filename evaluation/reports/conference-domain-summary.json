@@ -1,0 +1,48 @@
+{
+  "requested_cases": 8,
+  "paired_successful_cases": 8,
+  "baseline_domain": "general",
+  "updated_domain": "latter_day_saint",
+  "baseline_chrf": 59.55696191473251,
+  "updated_chrf": 60.67554643273129,
+  "baseline_review_flags": {
+    "terminology:sacrament": 4,
+    "terminology:stake": 4
+  },
+  "updated_review_flags": {
+    "terminology:sacrament": 1
+  },
+  "updated_timing": {
+    "cases": 8,
+    "failed": 0,
+    "cache_hits": 0,
+    "wall_ms": 84299.19029299982,
+    "median_translation_ms": 9572.900846,
+    "prompt_eval_ms": 29750.63,
+    "prompt_tokens_evaluated": 1029
+  },
+  "baseline_case_ids": [
+    "gc-2022-10-6328c7fd1f85-p1-en-es",
+    "gc-2022-10-6328c7fd1f85-p1-en-de",
+    "gc-2022-10-6328c7fd1f85-p1-es-de",
+    "gc-2022-10-6328c7fd1f85-p1-de-es",
+    "gc-2024-04-cfb5e91e2212-p1-en-es",
+    "gc-2024-04-cfb5e91e2212-p1-en-de",
+    "gc-2024-04-cfb5e91e2212-p1-es-de",
+    "gc-2024-04-cfb5e91e2212-p1-de-es"
+  ],
+  "independent_heldout_evaluation": false,
+  "semantic_accuracy_verified": false,
+  "note": "Targeted comparison against saved baseline outputs; reference alignment remains unreviewed. Timings are not a controlled speed comparison across profiles.",
+  "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+  "remaining_cases_for_review": [
+    {
+      "id": "gc-2022-10-6328c7fd1f85-p1-es-de",
+      "flags": [
+        "terminology:sacrament"
+      ],
+      "source_url": "https://www.churchofjesuschrist.org/study/general-conference/2022/10/33pearson?lang=spa#p1",
+      "reference_url": "https://www.churchofjesuschrist.org/study/general-conference/2022/10/33pearson?lang=deu#p1"
+    }
+  ]
+}

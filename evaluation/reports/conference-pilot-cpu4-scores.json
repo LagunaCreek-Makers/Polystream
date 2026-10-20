@@ -1,0 +1,173 @@
+{
+  "review_flag_counts": {
+    "digit_difference": 4,
+    "terminology:priesthood": 1,
+    "terminology:sacrament": 4,
+    "terminology:stake": 7,
+    "terminology:covenants": 4
+  },
+  "cases_for_review": [
+    {
+      "id": "gc-2019-04-82e13221eb06-p1-en-es",
+      "flags": [
+        "digit_difference"
+      ]
+    },
+    {
+      "id": "gc-2019-04-82e13221eb06-p1-en-de",
+      "flags": [
+        "digit_difference"
+      ]
+    },
+    {
+      "id": "gc-2021-04-222167f8953f-p4-en-de",
+      "flags": [
+        "terminology:priesthood"
+      ]
+    },
+    {
+      "id": "gc-2022-10-6328c7fd1f85-p1-en-es",
+      "flags": [
+        "terminology:sacrament",
+        "terminology:stake"
+      ]
+    },
+    {
+      "id": "gc-2022-10-6328c7fd1f85-p1-en-de",
+      "flags": [
+        "terminology:sacrament",
+        "terminology:stake"
+      ]
+    },
+    {
+      "id": "gc-2022-10-6328c7fd1f85-p1-es-de",
+      "flags": [
+        "terminology:sacrament",
+        "terminology:stake"
+      ]
+    },
+    {
+      "id": "gc-2022-10-6328c7fd1f85-p1-de-es",
+      "flags": [
+        "terminology:sacrament",
+        "terminology:stake"
+      ]
+    },
+    {
+      "id": "gc-2024-10-8f988b283639-p_owSZK-en-es",
+      "flags": [
+        "digit_difference"
+      ]
+    },
+    {
+      "id": "gc-2024-10-8f988b283639-p_owSZK-en-de",
+      "flags": [
+        "digit_difference"
+      ]
+    },
+    {
+      "id": "gc-2025-04-16d9a265fffe-p_yt3AF-en-es",
+      "flags": [
+        "terminology:covenants"
+      ]
+    },
+    {
+      "id": "gc-2025-04-16d9a265fffe-p_yt3AF-en-de",
+      "flags": [
+        "terminology:covenants"
+      ]
+    },
+    {
+      "id": "gc-2025-04-16d9a265fffe-p_yt3AF-es-de",
+      "flags": [
+        "terminology:covenants"
+      ]
+    },
+    {
+      "id": "gc-2025-04-16d9a265fffe-p_yt3AF-de-es",
+      "flags": [
+        "terminology:covenants"
+      ]
+    },
+    {
+      "id": "gc-2026-04-72bb226b7351-p_nA954-en-de",
+      "flags": [
+        "terminology:stake"
+      ]
+    },
+    {
+      "id": "gc-2026-04-72bb226b7351-p_nA954-es-de",
+      "flags": [
+        "terminology:stake"
+      ]
+    },
+    {
+      "id": "gc-2026-04-72bb226b7351-p_nA954-de-es",
+      "flags": [
+        "terminology:stake"
+      ]
+    }
+  ],
+  "flags_are_diagnostics_not_errors": true,
+  "conferences_with_successful_cases": 20,
+  "cases_by_conference": {
+    "2017-04": 4,
+    "2017-10": 4,
+    "2018-04": 4,
+    "2018-10": 4,
+    "2019-04": 4,
+    "2019-10": 4,
+    "2020-04": 4,
+    "2020-10": 4,
+    "2021-04": 3,
+    "2021-10": 4,
+    "2022-04": 4,
+    "2022-10": 4,
+    "2023-04": 4,
+    "2023-10": 4,
+    "2024-04": 4,
+    "2024-10": 4,
+    "2025-04": 4,
+    "2025-10": 3,
+    "2026-04": 4,
+    "2026-10": 4
+  },
+  "successful_unique_cases": 78,
+  "failed_attempts": 2,
+  "by_pair": {
+    "de-es": {
+      "cases": 18,
+      "chrf": 53.45745098046144,
+      "median_translation_ms": 12698.9237315,
+      "p95_translation_ms": 29300.766835000002,
+      "cache_hits": 0
+    },
+    "en-de": {
+      "cases": 20,
+      "chrf": 53.033442907034164,
+      "median_translation_ms": 12829.411161,
+      "p95_translation_ms": 21768.019295,
+      "cache_hits": 0
+    },
+    "en-es": {
+      "cases": 20,
+      "chrf": 64.5792526953702,
+      "median_translation_ms": 14781.28471,
+      "p95_translation_ms": 20252.314747,
+      "cache_hits": 0
+    },
+    "es-de": {
+      "cases": 20,
+      "chrf": 52.29860652330586,
+      "median_translation_ms": 13634.60253,
+      "p95_translation_ms": 24634.463857,
+      "cache_hits": 0
+    }
+  },
+  "metric_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+  "semantic_accuracy_verified": false,
+  "alignment_reviewed": false,
+  "audio_tested": false,
+  "requested_cases": 80,
+  "remaining_unique_cases": 2
+}

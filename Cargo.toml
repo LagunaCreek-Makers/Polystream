@@ -1,0 +1,19 @@
+[package]
+name = "live-translate-rs"
+version = "0.5.0"
+edition = "2021"
+description = "Offline Windows/Linux voice translation and typed speech prototype"
+license = "MIT"
+
+[dependencies]
+anyhow = "1.0"
+cpal = "0.15.3"
+eframe = { version = "0.31.1", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "multipart"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["rt", "time", "sync", "macros", "process", "io-util"] }
+
+[profile.release]
+lto = false
+strip = true

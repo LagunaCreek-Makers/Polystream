@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-10-19T18:44:41.842376+00:00",
+  "publisher": "The Church of Jesus Christ of Latter-day Saints",
+  "notice": "Short official excerpts for evaluation; third-party text is excluded from the application MIT license. Reference wording is not the only valid interpretation.",
+  "passages": [
+    {
+      "id": "bom-joy",
+      "reference": "2 Nephi 2:25",
+      "kind": "official_scripture",
+      "languages": {
+        "en": {
+          "text": "Adam fell that men might be; and men are, that they might have joy.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng#p25",
+          "sha256": "833955be3eef5e094229513c151a97dbb8dc8337eca1aa9b3e59aeeae092d05e"
+        },
+        "es": {
+          "text": "Adán cayó para que los hombres existiesen; y existen los hombres para que tengan gozo.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=spa#p25",
+          "sha256": "66b7add72e54d850ef0328c8aad7361922805977873d54717a37d6b6399b501c"
+        },
+        "de": {
+          "text": "Adam fiel, damit Menschen sein können, und Menschen sind, damit sie Freude haben können.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=deu#p25",
+          "sha256": "7838a6206ab5c6f0e7d434c1f6f928a83d1d73e242226948bfaec67e09dffb62"
+        }
+      }
+    },
+    {
+      "id": "bom-spirit",
+      "reference": "Moroni 10:5",
+      "kind": "official_scripture",
+      "languages": {
+        "en": {
+          "text": "And by the power of the Holy Ghost ye may know the truth of all things.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng#p5",
+          "sha256": "1908c25cdb2d64aef9777c11d87da4df0289b5afb90d52eb4babc4dbf1d9a649"
+        },
+        "es": {
+          "text": "y por el poder del Espíritu Santo podréis conocer la verdad de todas las cosas.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=spa#p5",
+          "sha256": "59c02234cdbe1f1f70381fa69b5612352e6198b7b0919bd14e07a2a263f2fed0"
+        },
+        "de": {
+          "text": "Und durch die Macht des Heiligen Geistes könnt ihr von allem wissen, ob es wahr ist.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=deu#p5",
+          "sha256": "731596f607f189d3768701ff8a2e2c2736ccfb5522a7afe4b5353855bc4b6b2d"
+        }
+      }
+    },
+    {
+      "id": "dc-faith",
+      "reference": "Doctrine and Covenants 6:36",
+      "kind": "official_scripture",
+      "languages": {
+        "en": {
+          "text": "Look unto me in every thought; doubt not, fear not.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=eng#p36",
+          "sha256": "c0865505e8e0dc89f409be5e2d664072f6d68b42fec1eadb425fffeb5a058777"
+        },
+        "es": {
+          "text": "Mirad hacia mí en todo pensamiento; no dudéis; no temáis.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=spa#p36",
+          "sha256": "61c5dae5a5fce6e21daca8b412433546c406d0263ee8d9b45c8059b0014f2775"
+        },
+        "de": {
+          "text": "Blickt in jedem Gedanken auf mich; zweifelt nicht, fürchtet euch nicht.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=deu#p36",
+          "sha256": "1a8363c42895720cc75df7f01cafc91d55b4846f7895a83859ee4abcfbf99d3d"
+        }
+      }
+    },
+    {
+      "id": "bible-compassion",
+      "reference": "John 11:35",
+      "kind": "official_scripture",
+      "languages": {
+        "en": {
+          "text": "Jesus wept.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/nt/john/11?lang=eng#p35",
+          "sha256": "37c0a7cae6955a79b8c7dc2663fea265e804a7e88d69ca011fa0bcc83beb521d"
+        },
+        "es": {
+          "text": "Y lloró Jesús.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/nt/john/11?lang=spa#p35",
+          "sha256": "000c5f50e4ec1768c48eef04f7ab8c6727954e42f2a7304bb8af867fb0defbee"
+        },
+        "de": {
+          "text": "Jesus weinte.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/nt/john/11?lang=deu#p35",
+          "sha256": "0301d24b70451e88045ef6a97537ccc913474773ec8abcdce525038df1502725"
+        }
+      }
+    },
+    {
+      "id": "aof-accountability",
+      "reference": "Articles of Faith 1:2",
+      "kind": "official_scripture",
+      "languages": {
+        "en": {
+          "text": "We believe that men will be punished for their own sins, and not for Adam’s transgression.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/a-of-f/1?lang=eng#p2",
+          "sha256": "f4c6abd64919d369430c9ecaad6f544613b1048c3547075befc50b16c16b6612"
+        },
+        "es": {
+          "text": "Creemos que los hombres serán castigados por sus propios pecados, y no por la transgresión de Adán.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/a-of-f/1?lang=spa#p2",
+          "sha256": "7db22cd870fdad2c2757d3b5ae37e4beafa6eab7a68ca32998d903f58b8baf80"
+        },
+        "de": {
+          "text": "Wir glauben, dass der Mensch für seine eigenen Sünden bestraft werden wird und nicht für die Übertretung Adams.",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/a-of-f/1?lang=deu#p2",
+          "sha256": "45fb1c172495b6f4ef6f04d286f1c5ac9f3665a98732b09842ec74d1d2742794"
+        }
+      }
+    },
+    {
+      "id": "meeting-sacrament",
+      "kind": "original_meeting_sentence",
+      "reference": "Original evaluation sentence; draft references need bilingual review",
+      "review_focus": [
+        "sacrament / Santa Cena / Abendmahl",
+        "Sequence: after, not before"
+      ],
+      "languages": {
+        "en": {
+          "text": "We will partake of the sacrament after the hymn."
+        },
+        "es": {
+          "text": "Participaremos de la Santa Cena después del himno."
+        },
+        "de": {
+          "text": "Nach dem Lied werden wir vom Abendmahl nehmen."
+        }
+      }
+    },
+    {
+      "id": "meeting-covenants",
+      "kind": "original_meeting_sentence",
+      "reference": "Original evaluation sentence; draft references need bilingual review",
+      "review_focus": [
+        "covenants / convenios / Bündnisse",
+        "Heavenly Father"
+      ],
+      "languages": {
+        "en": {
+          "text": "We make covenants with our Heavenly Father."
+        },
+        "es": {
+          "text": "Hacemos convenios con nuestro Padre Celestial."
+        },
+        "de": {
+          "text": "Wir schließen Bündnisse mit unserem Vater im Himmel."
+        }
+      }
+    },
+    {
+      "id": "meeting-atonement",
+      "kind": "original_meeting_sentence",
+      "reference": "Original evaluation sentence; draft references need bilingual review",
+      "review_focus": [
+        "Atonement / expiación / Sühnopfer",
+        "Repentance and hope"
+      ],
+      "languages": {
+        "en": {
+          "text": "Through the Atonement of Jesus Christ, we can repent and find hope."
+        },
+        "es": {
+          "text": "Por medio de la expiación de Jesucristo, podemos arrepentirnos y hallar esperanza."
+        },
+        "de": {
+          "text": "Durch das Sühnopfer Jesu Christi können wir umkehren und Hoffnung finden."
+        }
+      }
+    },
+    {
+      "id": "meeting-holy-ghost",
+      "kind": "original_meeting_sentence",
+      "reference": "Original evaluation sentence; draft references need bilingual review",
+      "review_focus": [
+        "Holy Ghost / Espíritu Santo / Heiliger Geist",
+        "Can: avoid changing possibility into certainty"
+      ],
+      "languages": {
+        "en": {
+          "text": "The Holy Ghost can help us recognize truth."
+        },
+        "es": {
+          "text": "El Espíritu Santo puede ayudarnos a reconocer la verdad."
+        },
+        "de": {
+          "text": "Der Heilige Geist kann uns helfen, Wahrheit zu erkennen."
+        }
+      }
+    },
+    {
+      "id": "meeting-priesthood",
+      "kind": "original_meeting_sentence",
+      "reference": "Original evaluation sentence; draft references need bilingual review",
+      "review_focus": [
+        "bishop / obispo / Bischof",
+        "priesthood / sacerdocio / Priestertum",
+        "ward means congregation, not hospital or municipality"
+      ],
+      "languages": {
+        "en": {
+          "text": "The bishop invited the priesthood holders to serve the families in our ward."
+        },
+        "es": {
+          "text": "El obispo invitó a los poseedores del sacerdocio a servir a las familias de nuestro barrio."
+        },
+        "de": {
+          "text": "Der Bischof hat die Priestertumsträger gebeten, den Familien in unserer Gemeinde zu dienen."
+        }
+      }
+    },
+    {
+      "id": "meeting-stake",
+      "kind": "original_meeting_sentence",
+      "reference": "Original evaluation sentence; draft references need bilingual review",
+      "review_focus": [
+        "stake / estaca / Pfahl",
+        "10 versus 11",
+        "Negation"
+      ],
+      "languages": {
+        "en": {
+          "text": "Our stake conference begins at ten, not at eleven."
+        },
+        "es": {
+          "text": "Nuestra conferencia de estaca comienza a las diez, no a las once."
+        },
+        "de": {
+          "text": "Unsere Pfahlkonferenz beginnt um zehn Uhr, nicht um elf Uhr."
+        }
+      }
+    },
+    {
+      "id": "meeting-reference",
+      "kind": "original_meeting_sentence",
+      "reference": "Original evaluation sentence; draft references need bilingual review",
+      "review_focus": [
+        "Moroni",
+        "Book of Mormon title",
+        "Chapter 10, verse 5"
+      ],
+      "languages": {
+        "en": {
+          "text": "Please read Moroni chapter ten, verse five, in the Book of Mormon."
+        },
+        "es": {
+          "text": "Por favor, lean Moroni, capítulo diez, versículo cinco, en el Libro de Mormón."
+        },
+        "de": {
+          "text": "Bitte lesen Sie im Buch Mormon Moroni, Kapitel zehn, Vers fünf."
+        }
+      }
+    },
+    {
+      "id": "meeting-trials",
+      "kind": "original_meeting_sentence",
+      "reference": "Original evaluation sentence; draft references need bilingual review",
+      "review_focus": [
+        "Nested negation",
+        "Do not promise an absence of trials"
+      ],
+      "languages": {
+        "en": {
+          "text": "Faith does not mean that we will never face trials."
+        },
+        "es": {
+          "text": "Tener fe no significa que nunca afrontaremos pruebas."
+        },
+        "de": {
+          "text": "Glaube bedeutet nicht, dass wir niemals Prüfungen erleben werden."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+name: Rust checks
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  check:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Linux dependencies
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y pkg-config libasound2-dev libx11-dev libxi-dev libxrandr-dev libxcursor-dev libxinerama-dev libegl1-mesa-dev libwayland-dev libxkbcommon-dev
+      - run: cargo fmt --check
+      - run: cargo check --all-targets --locked
+      - run: cargo test --all-targets --locked
+      - run: cargo clippy --all-targets --locked -- -D warnings
+      - name: Offline helper syntax
+        run: python -m py_compile scripts/start_offline.py scripts/fetch_models.py scripts/check_offline.py scripts/build_evaluation.py scripts/conference_corpus.py scripts/run_conference.py scripts/score_conference.py scripts/compare_conference_performance.py scripts/compare_conference_domain.py
+      - name: Hardware policy tests
+        run: python -m unittest discover -s scripts -p "test_*.py"
+      - name: Build benchmark adapter integration target
+        if: runner.os == 'Linux'
+        run: cargo build --example offline_benchmark --locked
+      - name: Benchmark adapter integration
+        if: runner.os == 'Linux'
+        env:
+          LIVE_TRANSLATE_BENCHMARK: ${{ github.workspace }}/target/debug/examples/offline_benchmark
+        run: python -m unittest discover -s scripts -p "test_benchmark_integration.py"
+      - run: cargo build --release --locked
+      - uses: actions/upload-artifact@v4
+        with:
+          name: live-translate-${{ runner.os }}
+          path: |
+            target/release/live-translate-rs
+            target/release/live-translate-rs.exe

@@ -1,0 +1,54 @@
+{
+  "scope": "Two 2024 development paragraphs, eight ordering cases, four exact repeats per cache arm",
+  "threads": 4,
+  "gpu_layers_requested": 0,
+  "hardware": {
+    "os": "Linux",
+    "architecture": "x86_64",
+    "logical_cpus": 9
+  },
+  "interleaved": {
+    "cases": 8,
+    "failed": 0,
+    "cache_hits": 0,
+    "wall_ms": 28704.490086000078,
+    "median_translation_ms": 3150.6923610000003,
+    "prompt_eval_ms": 10056.550000000001,
+    "prompt_tokens_evaluated": 260
+  },
+  "grouped": {
+    "cases": 8,
+    "failed": 0,
+    "cache_hits": 0,
+    "wall_ms": 25356.752817999677,
+    "median_translation_ms": 3145.0922325,
+    "prompt_eval_ms": 8087.389999999999,
+    "prompt_tokens_evaluated": 260
+  },
+  "identical_outputs_across_orderings": true,
+  "repeat_uncached": {
+    "cases": 4,
+    "failed": 0,
+    "cache_hits": 0,
+    "wall_ms": 8500.889257999916,
+    "median_translation_ms": 1651.616157,
+    "prompt_eval_ms": 2569.02,
+    "prompt_tokens_evaluated": 73
+  },
+  "repeat_cached": {
+    "cases": 4,
+    "failed": 0,
+    "cache_hits": 3,
+    "wall_ms": 3285.9109649998572,
+    "median_translation_ms": 0.0066935,
+    "prompt_eval_ms": 1905.63,
+    "prompt_tokens_evaluated": 70
+  },
+  "median_cache_hit_ms": 0.00516,
+  "semantic_accuracy_verified": false,
+  "audio_tested": false,
+  "repeated_workload_is_not_representative_of_all_talks": true,
+  "ordering_trial_is_single_run": true,
+  "default_ordering_changed": false,
+  "observed_repeat_wall_reduction_percent": 61.34626784006636
+}

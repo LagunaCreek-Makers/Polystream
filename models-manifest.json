@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "models/whisper/ggml-base.bin",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-base.bin",
+      "sha256": "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe",
+      "size": 147951465,
+      "license": "Whisper/whisper.cpp: MIT; retain their licenses"
+    },
+    {
+      "path": "models/translation/Qwen3-4B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "size": 2497280256,
+      "license": "Apache-2.0; Qwen/Qwen3-4B-GGUF model card"
+    },
+    {
+      "path": "models/piper/es_ES-sharvard-medium.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/c10ece1aade47bb51c153c893d14e5bf8e5b7117/es/es_ES/sharvard/medium/es_ES-sharvard-medium.onnx",
+      "sha256": "40febfb1679c69a4505ff311dc136e121e3419a13a290ef264fdf43ddedd0fb1",
+      "size": 76733615,
+      "license": "Model card: SHARVARD dataset CC BY 3.0; retain attribution"
+    },
+    {
+      "path": "models/piper/es_ES-sharvard-medium.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/c10ece1aade47bb51c153c893d14e5bf8e5b7117/es/es_ES/sharvard/medium/es_ES-sharvard-medium.onnx.json",
+      "sha256": "7438c9b699c72b0c3388dae1b68d3f364dc66a2150fe554a1c11f03372957b2c",
+      "size": 4903,
+      "license": "Model card: SHARVARD dataset CC BY 3.0; retain attribution"
+    },
+    {
+      "path": "models/piper/es_ES-sharvard-medium.MODEL_CARD",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/c10ece1aade47bb51c153c893d14e5bf8e5b7117/es/es_ES/sharvard/medium/MODEL_CARD",
+      "sha256": "37655314d08fe8a0900abc628d3bcbee48ffbdd8fad9306b89525a0ada20fefc",
+      "size": 392,
+      "license": "Model card: SHARVARD dataset CC BY 3.0; retain attribution"
+    },
+    {
+      "path": "models/piper/de_DE-thorsten-medium.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/c10ece1aade47bb51c153c893d14e5bf8e5b7117/de/de_DE/thorsten/medium/de_DE-thorsten-medium.onnx",
+      "sha256": "7e64762d8e5118bb578f2eea6207e1a35a8e0c30595010b666f983fc87bb7819",
+      "size": 63201294,
+      "license": "Model card: Thorsten dataset CC0"
+    },
+    {
+      "path": "models/piper/de_DE-thorsten-medium.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/c10ece1aade47bb51c153c893d14e5bf8e5b7117/de/de_DE/thorsten/medium/de_DE-thorsten-medium.onnx.json",
+      "sha256": "974adee790533adb273a1ac88f49027d2a1b8f0f2cf4905954a4791e79264e85",
+      "size": 4819,
+      "license": "Model card: Thorsten dataset CC0"
+    },
+    {
+      "path": "models/piper/de_DE-thorsten-medium.MODEL_CARD",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/c10ece1aade47bb51c153c893d14e5bf8e5b7117/de/de_DE/thorsten/medium/MODEL_CARD",
+      "sha256": "5196b5ab0794e6056263a1f37c18bec407b61ac187529bee29d1c366871e5c9e",
+      "size": 285,
+      "license": "Model card: Thorsten dataset CC0"
+    }
+  ]
+}
