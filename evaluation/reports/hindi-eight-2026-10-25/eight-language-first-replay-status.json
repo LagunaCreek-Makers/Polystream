@@ -1,0 +1,88 @@
+{
+  "phase": "failed",
+  "started_utc": "2026-10-25T22:38:04.182911+00:00",
+  "machine": "WORKSTATIONT440",
+  "language_cases": [
+    "es,de,fr,zh-Hans,ru,it,ja,hi"
+  ],
+  "logical_processors": 64,
+  "input_seconds": 100.7020625,
+  "cases": [],
+  "updated_utc": "2026-10-25T22:38:58.764892+00:00",
+  "current_case": 1,
+  "threads": 4,
+  "slots": 1,
+  "progress": {
+    "consumed_seconds": 47.98,
+    "input_seconds": 100.7020625,
+    "outputs": [
+      {
+        "completed": 12,
+        "language": "es",
+        "last_delay_seconds": 8.2547724,
+        "oldest_seconds": 16.3204473,
+        "pending": 6
+      },
+      {
+        "completed": 13,
+        "language": "de",
+        "last_delay_seconds": 6.5828399,
+        "oldest_seconds": 14.0204557,
+        "pending": 5
+      },
+      {
+        "completed": 13,
+        "language": "fr",
+        "last_delay_seconds": 5.6616996,
+        "oldest_seconds": 14.0204593,
+        "pending": 5
+      },
+      {
+        "completed": 13,
+        "language": "zh-Hans",
+        "last_delay_seconds": 7.2771757,
+        "oldest_seconds": 14.0204622,
+        "pending": 5
+      },
+      {
+        "completed": 12,
+        "language": "ru",
+        "last_delay_seconds": 9.1076826,
+        "oldest_seconds": 16.3204654,
+        "pending": 6
+      },
+      {
+        "completed": 14,
+        "language": "it",
+        "last_delay_seconds": 4.6983508,
+        "oldest_seconds": 9.8204739,
+        "pending": 4
+      },
+      {
+        "completed": 14,
+        "language": "ja",
+        "last_delay_seconds": 4.8864509,
+        "oldest_seconds": 9.8204782,
+        "pending": 4
+      },
+      {
+        "completed": 13,
+        "language": "hi",
+        "last_delay_seconds": 5.3340602,
+        "oldest_seconds": 14.0204818,
+        "pending": 5
+      }
+    ],
+    "pending_source_oldest_seconds": 16.3204421,
+    "pending_source_seconds": 14.82,
+    "wall_seconds": 47.980566
+  },
+  "resources": {
+    "wall_seconds": 48.34299999999348,
+    "system_cpu_percent": 9.907325684024714,
+    "system_used_ram_bytes": 70941130752,
+    "gpu_percent": 87.0,
+    "gpu_used_mib": 6548.0
+  },
+  "error": "Replay exited 1; inspect C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\eight-language-first-replay\\01-threads-4-slots-1"
+}

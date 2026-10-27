@@ -1,0 +1,73 @@
+{
+  "consumed_seconds": 900.0,
+  "input_seconds": 900.0,
+  "outputs": [
+    {
+      "completed": 300,
+      "language": "es",
+      "last_delay_seconds": 19.6755765,
+      "oldest_seconds": 0.0,
+      "pending": 0,
+      "untranslated": 1
+    },
+    {
+      "completed": 300,
+      "language": "de",
+      "last_delay_seconds": 19.964578799999998,
+      "oldest_seconds": 0.0,
+      "pending": 0,
+      "untranslated": 1
+    },
+    {
+      "completed": 300,
+      "language": "zh-Hans",
+      "last_delay_seconds": 10.874212,
+      "oldest_seconds": 0.0,
+      "pending": 0,
+      "untranslated": 1
+    },
+    {
+      "completed": 300,
+      "language": "fr",
+      "last_delay_seconds": 31.4556116,
+      "oldest_seconds": 0.0,
+      "pending": 0,
+      "untranslated": 1
+    },
+    {
+      "completed": 300,
+      "language": "ja",
+      "last_delay_seconds": 14.7118879,
+      "oldest_seconds": 0.0,
+      "pending": 0,
+      "untranslated": 1
+    },
+    {
+      "completed": 300,
+      "language": "ru",
+      "last_delay_seconds": 36.6630967,
+      "oldest_seconds": 0.0,
+      "pending": 0,
+      "untranslated": 1
+    },
+    {
+      "completed": 290,
+      "language": "ar",
+      "last_delay_seconds": 61.7865696,
+      "oldest_seconds": 63.0130638,
+      "pending": 1,
+      "untranslated": 10
+    },
+    {
+      "completed": 297,
+      "language": "hi",
+      "last_delay_seconds": 6.984394,
+      "oldest_seconds": 0.0,
+      "pending": 0,
+      "untranslated": 4
+    }
+  ],
+  "pending_source_oldest_seconds": 63.0130165,
+  "pending_source_seconds": 0.86,
+  "wall_seconds": 962.1531145
+}

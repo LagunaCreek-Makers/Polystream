@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "models/piper/ar_JO-kareem-medium.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ar/ar_JO/kareem/medium/ar_JO-kareem-medium.onnx",
+      "sha256": "9e95cab07b679da603bba17c4dec7ab3111320571964ee95c0379603c086491e",
+      "size": 63201294,
+      "license": "Upstream repository metadata MIT; Kareem card dataset license See URL, unresolved. Optional local evaluation; retain provenance and do not assume dataset redistribution clearance."
+    },
+    {
+      "path": "models/piper/ar_JO-kareem-medium.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ar/ar_JO/kareem/medium/ar_JO-kareem-medium.onnx.json",
+      "sha256": "ea6d9b9d9076dbdb6bf5c98c6a141ef154959d2359709b37855727964e7d6c4d",
+      "size": 5024,
+      "license": "Upstream repository metadata MIT; Kareem card dataset license See URL, unresolved. Optional local evaluation; retain provenance and do not assume dataset redistribution clearance."
+    },
+    {
+      "path": "models/piper/ar_JO-kareem-medium.MODEL_CARD",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ar/ar_JO/kareem/medium/MODEL_CARD",
+      "sha256": "38e1e4f94c4cb9eda041a639096763a8c5681d0be5a5b3e22f990aed6bb4b86e",
+      "size": 283,
+      "license": "Upstream repository metadata MIT; Kareem card dataset license See URL, unresolved. Optional local evaluation; retain provenance and do not assume dataset redistribution clearance."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "models/piper/eu_ES-antton-medium.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/eu/eu_ES/antton/medium/eu_ES-antton-medium.onnx",
+      "sha256": "dc8305fda17b22e922f011cd7450c50c76b2f2630c2cfa5c35564326daef1454",
+      "size": 63531379,
+      "license": "Upstream dataset: CC BY 4.0; preserve Antton dataset attribution"
+    },
+    {
+      "path": "models/piper/eu_ES-antton-medium.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/eu/eu_ES/antton/medium/eu_ES-antton-medium.onnx.json",
+      "sha256": "bc26d21295427594330bb8ea579c8b922d1d1f9dde1b51dc9949fbf3f559dcea",
+      "size": 5076,
+      "license": "Upstream dataset: CC BY 4.0; preserve Antton dataset attribution"
+    },
+    {
+      "path": "models/piper/eu_ES-antton-medium.MODEL_CARD",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/eu/eu_ES/antton/medium/MODEL_CARD",
+      "sha256": "61e1cf7bba48a290be225a1afb3167094fc16c479cea655b11c8ff87e9245264",
+      "size": 310,
+      "license": "Upstream dataset: CC BY 4.0; preserve Antton dataset attribution"
+    }
+  ]
+}

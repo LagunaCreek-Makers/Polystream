@@ -1,0 +1,16 @@
+[
+  {
+    "case": 1,
+    "outputs": [
+      {
+        "language": "ru",
+        "count": 38,
+        "median": 5.5821206,
+        "p95": 9.1289754,
+        "max": 9.2490333
+      }
+    ],
+    "drain": 6.843354200000007,
+    "aligned_srt": true
+  }
+]

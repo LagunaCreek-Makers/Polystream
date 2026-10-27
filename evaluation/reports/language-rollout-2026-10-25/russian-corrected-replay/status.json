@@ -1,0 +1,66 @@
+{
+  "phase": "completed",
+  "started_utc": "2026-10-25T17:02:58.887667+00:00",
+  "machine": "WORKSTATIONT440",
+  "language_cases": [
+    "ru"
+  ],
+  "logical_processors": 64,
+  "input_seconds": 100.7020625,
+  "cases": [
+    {
+      "case": 1,
+      "threads": 4,
+      "slots": 1,
+      "summary": {
+        "accepted_clauses": 38,
+        "input_seconds": 100.7020625,
+        "music_excluded_seconds": 0.0,
+        "outputs": [
+          {
+            "completed": 38,
+            "language": "ru",
+            "max_seconds": 9.2490333,
+            "median_seconds": 5.6183473,
+            "p95_seconds": 9.1289754
+          }
+        ],
+        "physical_devices_tested": false,
+        "source_passes": 1,
+        "status": "passed",
+        "transcripts": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\russian-corrected-replay\\01-threads-4-slots-1\\replay\\Meeting_2026-10-25_10-03-03",
+        "wall_seconds": 107.5454167
+      },
+      "resources": {
+        "system_cpu_percent": {
+          "mean": 11.598650640876409,
+          "max": 20.437714159389852
+        },
+        "system_used_ram_bytes": {
+          "mean": 61678337546.44898,
+          "max": 62984642560
+        },
+        "gpu_percent": {
+          "mean": 5.1020408163265305,
+          "max": 87.0
+        },
+        "gpu_used_mib": {
+          "mean": 6480.857142857143,
+          "max": 6709.0
+        }
+      },
+      "folder": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\russian-corrected-replay\\01-threads-4-slots-1"
+    }
+  ],
+  "updated_utc": "2026-10-25T17:04:51.789895+00:00",
+  "current_case": 1,
+  "threads": 4,
+  "slots": 1,
+  "resources": {
+    "wall_seconds": 107.43799999996554,
+    "system_cpu_percent": 5.448895794029518,
+    "system_used_ram_bytes": 61476683776,
+    "gpu_percent": 1.0,
+    "gpu_used_mib": 6390.0
+  }
+}

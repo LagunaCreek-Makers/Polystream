@@ -1,0 +1,176 @@
+[
+  {
+    "run": "hindi-first-replay",
+    "status": "completed",
+    "outputs": [
+      {
+        "language": "hi",
+        "count": 38,
+        "median": 20.819962699999998,
+        "p95": 43.5719922,
+        "max": 43.8500635,
+        "last_measured_source": 97.46
+      }
+    ],
+    "drain_seconds": 42.913252799999995,
+    "srt_timestamps_aligned": true,
+    "last_progress": null,
+    "error": null
+  },
+  {
+    "run": "hindi-persistent-replay",
+    "status": "completed",
+    "outputs": [
+      {
+        "language": "hi",
+        "count": 38,
+        "median": 5.3139932000000005,
+        "p95": 9.2752914,
+        "max": 9.6010364,
+        "last_measured_source": 97.46
+      }
+    ],
+    "drain_seconds": 4.0543069,
+    "srt_timestamps_aligned": true,
+    "last_progress": null,
+    "error": null
+  },
+  {
+    "run": "eight-language-first-replay",
+    "status": "failed",
+    "outputs": [
+      {
+        "language": "es",
+        "count": 12,
+        "median": 6.9795815999999995,
+        "p95": 8.7105744,
+        "max": 8.7105744,
+        "last_measured_source": 29.76
+      },
+      {
+        "language": "de",
+        "count": 13,
+        "median": 5.9825322,
+        "p95": 6.5919826,
+        "max": 6.5919826,
+        "last_measured_source": 31.66
+      },
+      {
+        "language": "fr",
+        "count": 13,
+        "median": 5.2039582,
+        "p95": 6.107717,
+        "max": 6.107717,
+        "last_measured_source": 31.66
+      },
+      {
+        "language": "zh-Hans",
+        "count": 13,
+        "median": 6.0562701,
+        "p95": 7.2771757,
+        "max": 7.2771757,
+        "last_measured_source": 31.66
+      },
+      {
+        "language": "ru",
+        "count": 12,
+        "median": 6.7559223500000005,
+        "p95": 9.1424588,
+        "max": 9.1424588,
+        "last_measured_source": 29.76
+      },
+      {
+        "language": "it",
+        "count": 14,
+        "median": 4.3651259499999995,
+        "p95": 8.4315704,
+        "max": 8.4315704,
+        "last_measured_source": 33.96
+      },
+      {
+        "language": "ja",
+        "count": 14,
+        "median": 4.55277925,
+        "p95": 7.1724228,
+        "max": 7.1724228,
+        "last_measured_source": 33.96
+      },
+      {
+        "language": "hi",
+        "count": 13,
+        "median": 6.0032843,
+        "p95": 8.587204700000001,
+        "max": 8.587204700000001,
+        "last_measured_source": 31.66
+      }
+    ],
+    "drain_seconds": null,
+    "srt_timestamps_aligned": null,
+    "last_progress": {
+      "consumed_seconds": 47.98,
+      "input_seconds": 100.7020625,
+      "outputs": [
+        {
+          "completed": 12,
+          "language": "es",
+          "last_delay_seconds": 8.2547724,
+          "oldest_seconds": 16.3204473,
+          "pending": 6
+        },
+        {
+          "completed": 13,
+          "language": "de",
+          "last_delay_seconds": 6.5828399,
+          "oldest_seconds": 14.0204557,
+          "pending": 5
+        },
+        {
+          "completed": 13,
+          "language": "fr",
+          "last_delay_seconds": 5.6616996,
+          "oldest_seconds": 14.0204593,
+          "pending": 5
+        },
+        {
+          "completed": 13,
+          "language": "zh-Hans",
+          "last_delay_seconds": 7.2771757,
+          "oldest_seconds": 14.0204622,
+          "pending": 5
+        },
+        {
+          "completed": 12,
+          "language": "ru",
+          "last_delay_seconds": 9.1076826,
+          "oldest_seconds": 16.3204654,
+          "pending": 6
+        },
+        {
+          "completed": 14,
+          "language": "it",
+          "last_delay_seconds": 4.6983508,
+          "oldest_seconds": 9.8204739,
+          "pending": 4
+        },
+        {
+          "completed": 14,
+          "language": "ja",
+          "last_delay_seconds": 4.8864509,
+          "oldest_seconds": 9.8204782,
+          "pending": 4
+        },
+        {
+          "completed": 13,
+          "language": "hi",
+          "last_delay_seconds": 5.3340602,
+          "oldest_seconds": 14.0204818,
+          "pending": 5
+        }
+      ],
+      "pending_source_oldest_seconds": 16.3204421,
+      "pending_source_seconds": 14.82,
+      "wall_seconds": 47.980566
+    },
+    "error": "Replay exited 1; inspect C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\eight-language-first-replay\\01-threads-4-slots-1"
+  }
+]

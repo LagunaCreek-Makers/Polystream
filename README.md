@@ -8,6 +8,12 @@ required during use.** The app makes HTTP requests only to numerical loopback ad
 on this computer, ignores proxy settings, disables redirects, and runs Piper locally.
 It contains no cloud fallback or automatic model downloads.
 
+## Experimental meeting features
+
+Live voice mode now supports a shared input feeding two independently routed Spanish/German outputs. It automatically saves source and translated SRT transcripts in a unique meeting subfolder of your selected project folder. The UI includes per-language delay traces and system CPU/RAM meters. See [DUAL_OUTPUT_VALIDATION.md](DUAL_OUTPUT_VALIDATION.md) for setup, short-test results, and the sustained/physical validation still required.
+
+For the first new-language evaluation, see [MANDARIN_EXPERIMENTAL.md](MANDARIN_EXPERIMENTAL.md). Mandarin remains experimental and is not in the default model pack.
+
 ## Local pipeline
 
 | Stage | Engine | Where it runs |
@@ -47,7 +53,9 @@ cargo build --locked
 
 Windows requires Visual Studio C++ Build Tools, then `cargo build --locked` in a developer
 terminal. Start the app with `cargo run --locked`. The default debug binary is in
-`target/debug/`. Release installers are not provided in this version.
+`target/debug/`. For automatic Windows dependency setup, run `Install-Windows.cmd`; then use
+`Start-Translation.cmd`. For NVIDIA acceleration, run `Install-GPU.cmd` and use
+`Start-Translation-GPU.cmd`. See **INSTALL_WINDOWS.md** and **WINDOWS_VALIDATION.md**.
 
 For the complete local pipeline after installing the engines/models:
 
@@ -65,6 +73,8 @@ never downloads anything and binds the inference engines only to 127.0.0.1.
 Select the input device/channel, output device/channel, languages and local configuration
 file (`offline.json` by default). Use headphones or an isolated output feed so translated
 speech is not recaptured. Only the selected output channel carries audio.
+
+See **MEETING_BUFFER.md** for speaker transitions, music breaks and finishing pending speech.
 
 ## Real-time limits and voice fidelity
 
@@ -93,10 +103,14 @@ Local voice/prosody preservation remains a later engine integration and performa
   depending on delivery of UI events. A local server can finish inference already submitted.
 - The first error is retained in session state. Restarted sessions have separate buffers
   and stop tokens, preventing old results from entering a new session.
-- Slow inference, audio gaps or queue overload stop visibly instead of silently dropping
-  translated clauses or building unlimited delay. No automatic retry/reconnect yet.
-- The app keeps captions in memory and does not record microphone audio to disk. The
-  local engine programs have their own console/output behavior.
+- Live source speech is buffered in memory (60 minutes by default, adjustable up to two
+  hours). A busy speech worker waits for space; older buffered speech does not expire.
+  Backlog is visible, and music pause/finish controls allow pending speech to drain.
+  Device failures and engine errors still stop processing visibly; automatic retry is
+  not implemented. See **MEETING_BUFFER.md** for capacity limits and recovery.
+- Captions and the live source backlog stay in memory during normal operation. An
+  explicit recovery button can save pending source audio after an error. Stop discards
+  pending audio. The local engines have their own console/output behavior.
 
 ## Religious speech profile and General Conference
 

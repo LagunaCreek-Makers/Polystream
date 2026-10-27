@@ -1,0 +1,22 @@
+{
+  "asr_port": 8178,
+  "translation_port": 8179,
+  "piper_binary": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\GitHub\\LagunaCreekMakers\\live-translate-rs\\engines\\piper\\piper\\piper.exe",
+  "piper_worker": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\GitHub\\LagunaCreekMakers\\live-translate-rs\\scripts\\piper_worker.py",
+  "piper_python_voices": {},
+  "voices": {
+    "de": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\GitHub\\LagunaCreekMakers\\live-translate-rs\\models\\piper\\de_DE-thorsten-medium.onnx",
+    "es": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\GitHub\\LagunaCreekMakers\\live-translate-rs\\models\\piper\\es_ES-sharvard-medium.onnx"
+  },
+  "asr_custom_adapter": false,
+  "translation_custom_adapter": false,
+  "asr_launch_args": [],
+  "translation_launch_args": [],
+  "whisper_server": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\GitHub\\LagunaCreekMakers\\live-translate-rs\\engines\\whisper-cuda\\Release\\whisper-server.exe",
+  "whisper_model": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\GitHub\\LagunaCreekMakers\\live-translate-rs\\models\\whisper\\ggml-base.bin",
+  "llama_server": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\GitHub\\LagunaCreekMakers\\live-translate-rs\\engines\\llama-cuda\\llama-server.exe",
+  "translation_model": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\GitHub\\LagunaCreekMakers\\live-translate-rs\\models\\translation\\Qwen3-8B-Q4_K_M.gguf",
+  "threads": 4,
+  "gpu_layers": 99,
+  "translation_domain": "latter_day_saint"
+}

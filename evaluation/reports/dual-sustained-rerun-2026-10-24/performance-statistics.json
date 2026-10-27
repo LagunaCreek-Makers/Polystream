@@ -1,0 +1,14 @@
+{
+  "full-soundtrack/es": {
+    "timed_phrases": 606,
+    "median_seconds": 6.87339135,
+    "p95_seconds": 71.4089373,
+    "max_seconds": 98.255665
+  },
+  "full-soundtrack/de": {
+    "timed_phrases": 607,
+    "median_seconds": 6.217286,
+    "p95_seconds": 64.9683712,
+    "max_seconds": 89.769632
+  }
+}

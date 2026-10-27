@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "publisher": "The Church of Jesus Christ of Latter-day Saints",
+  "verified_date": "2026-10-24",
+  "audience": "Church members listening to meetings and religious speeches",
+  "notice": "Short terminology facts with official source attribution; not a full-text corpus or an automatic replacement table. Source-verified does not mean native-speaker validated.",
+  "terms": [
+    {
+      "id": "book-of-mormon",
+      "source": "Book of Mormon",
+      "target_forms": {
+        "es": "Libro de Mormón",
+        "de": "Buch Mormon",
+        "zh-Hans": "摩尔门经"
+      },
+      "scope": "Scripture title",
+      "sources": {
+        "en": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=eng",
+        "es": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=spa",
+        "de": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=deu",
+        "zh-Hans": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=zhs"
+      },
+      "evidence": "Official paired title-page text/name navigation verified on 2026-10-24",
+      "role": "terminology-development",
+      "status": "source_verified; contextual/native-speaker review pending",
+      "entry_sha256": "542069c4dde21dfb2b4bc8341577e972d76807005f24e22f310460598db1841c"
+    },
+    {
+      "id": "mormon-author",
+      "source": "Mormon",
+      "target_forms": {
+        "es": "Mormón",
+        "de": "Mormon",
+        "zh-Hans": "摩尔门"
+      },
+      "scope": "Ancient author; do not substitute a modern Church member",
+      "sources": {
+        "en": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=eng",
+        "es": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=spa",
+        "de": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=deu",
+        "zh-Hans": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=zhs"
+      },
+      "evidence": "Official paired title-page text/name navigation verified on 2026-10-24",
+      "role": "terminology-development",
+      "status": "source_verified; contextual/native-speaker review pending",
+      "entry_sha256": "da11f2b48a35ad7f2d9b34834a5c5b59fe1bfea7007bd61c05d6045c0b4ccdf3"
+    },
+    {
+      "id": "nephi",
+      "source": "Nephi",
+      "target_forms": {
+        "es": "Nefi",
+        "de": "Nephi",
+        "zh-Hans": "尼腓"
+      },
+      "scope": "Scriptural person/name; allow grammatical inflection",
+      "sources": {
+        "en": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=eng",
+        "es": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=spa",
+        "de": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=deu",
+        "zh-Hans": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=zhs"
+      },
+      "evidence": "Official paired title-page text/name navigation verified on 2026-10-24",
+      "role": "terminology-development",
+      "status": "source_verified; contextual/native-speaker review pending",
+      "entry_sha256": "761f8b3d5723daa404c092bf7740ebd2be8b0f9e8585b237e147b59349453e72"
+    },
+    {
+      "id": "moroni",
+      "source": "Moroni",
+      "target_forms": {
+        "es": "Moroni",
+        "de": "Moroni",
+        "zh-Hans": "摩罗乃"
+      },
+      "scope": "Scriptural person/name; allow grammatical inflection",
+      "sources": {
+        "en": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=eng",
+        "es": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=spa",
+        "de": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=deu",
+        "zh-Hans": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=zhs"
+      },
+      "evidence": "Official paired title-page text/name navigation verified on 2026-10-24",
+      "role": "terminology-development",
+      "status": "source_verified; contextual/native-speaker review pending",
+      "entry_sha256": "cfc4bbd500c840df5f71bf82428e137c68dbaab4d6aa6c49e0199be812bf882d"
+    },
+    {
+      "id": "ether",
+      "source": "Ether",
+      "target_forms": {
+        "es": "Éter",
+        "de": "Ether",
+        "zh-Hans": "以帖"
+      },
+      "scope": "Scriptural person or associated book; not a chemical substance",
+      "sources": {
+        "en": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=eng",
+        "es": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=spa",
+        "de": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=deu",
+        "zh-Hans": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=zhs"
+      },
+      "evidence": "Official paired title-page text/name navigation verified on 2026-10-24",
+      "role": "terminology-development",
+      "status": "source_verified; contextual/native-speaker review pending",
+      "entry_sha256": "db75aa321291d302dda63d56493b7c9b2704b84d956026c2078b4dfc0ad493b4"
+    },
+    {
+      "id": "jared",
+      "source": "Jared",
+      "target_forms": {
+        "es": "Jared",
+        "de": "Jared",
+        "zh-Hans": "雅列"
+      },
+      "scope": "Scriptural person/name",
+      "sources": {
+        "en": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=eng",
+        "es": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=spa",
+        "de": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=deu",
+        "zh-Hans": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=zhs"
+      },
+      "evidence": "Official paired title-page text/name navigation verified on 2026-10-24",
+      "role": "terminology-development",
+      "status": "source_verified; contextual/native-speaker review pending",
+      "entry_sha256": "1183cd6bf5160712275f38c84c870b049f898bb21f08e06f676c4a5f3e10e110"
+    },
+    {
+      "id": "plates-record",
+      "source": "plates",
+      "target_forms": {
+        "es": "planchas",
+        "de": "Platten",
+        "zh-Hans": "页片"
+      },
+      "scope": "Ancient writing medium in this context; not dinnerware",
+      "sources": {
+        "en": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=eng",
+        "es": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=spa",
+        "de": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=deu",
+        "zh-Hans": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=zhs"
+      },
+      "evidence": "Official paired title-page text/name navigation verified on 2026-10-24",
+      "role": "terminology-development",
+      "status": "source_verified; contextual/native-speaker review pending",
+      "entry_sha256": "9a8a943f98be91a3ed575a1f85202c59b65d84febc2a848337c39738d0dc75e6"
+    },
+    {
+      "id": "covenants-plural",
+      "source": "covenants",
+      "target_forms": {
+        "es": "convenios",
+        "de": "Bündnisse",
+        "zh-Hans": "圣约"
+      },
+      "scope": "Religious agreements; retain plural/grammar as appropriate",
+      "sources": {
+        "en": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=eng",
+        "es": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=spa",
+        "de": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=deu",
+        "zh-Hans": "https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=zhs"
+      },
+      "evidence": "Official paired title-page text/name navigation verified on 2026-10-24",
+      "role": "terminology-development",
+      "status": "source_verified; contextual/native-speaker review pending",
+      "entry_sha256": "1338eb14f2f24aa2d7633b5e6e0455da226776becbb4aeebb36963960e2f6a34"
+    }
+  ]
+}

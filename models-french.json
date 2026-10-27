@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "models/piper/fr_FR-siwis-medium.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx",
+      "sha256": "641d1ab097da2b81128c076810edb052b385decc8be3381814802a64a73baf99",
+      "size": 63201294,
+      "license": "Upstream dataset: CC BY 4.0. Preserve SIWIS attribution and upstream model card."
+    },
+    {
+      "path": "models/piper/fr_FR-siwis-medium.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json",
+      "sha256": "39479916c2db192b5ac9764daddd0c744d83e023ad890c6976c0633ae4df8959",
+      "size": 4875,
+      "license": "Upstream dataset: CC BY 4.0. Preserve SIWIS attribution and upstream model card."
+    },
+    {
+      "path": "models/piper/fr_FR-siwis-medium.MODEL_CARD",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/fr/fr_FR/siwis/medium/MODEL_CARD",
+      "sha256": "bd8b8d079d4d3d2c4cc20345889bbcd586d72f021a132f93357a763eb5232cce",
+      "size": 284,
+      "license": "Upstream dataset: CC BY 4.0. Preserve SIWIS attribution and upstream model card."
+    }
+  ]
+}

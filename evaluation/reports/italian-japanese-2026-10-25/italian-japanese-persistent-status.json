@@ -1,0 +1,73 @@
+{
+  "phase": "completed",
+  "started_utc": "2026-10-25T17:16:44.529264+00:00",
+  "machine": "WORKSTATIONT440",
+  "language_cases": [
+    "it,ja"
+  ],
+  "logical_processors": 64,
+  "input_seconds": 100.7020625,
+  "cases": [
+    {
+      "case": 1,
+      "threads": 4,
+      "slots": 1,
+      "summary": {
+        "accepted_clauses": 38,
+        "input_seconds": 100.7020625,
+        "music_excluded_seconds": 0.0,
+        "outputs": [
+          {
+            "completed": 38,
+            "language": "it",
+            "max_seconds": 6.8504049,
+            "median_seconds": 3.4118228,
+            "p95_seconds": 5.4671353
+          },
+          {
+            "completed": 38,
+            "language": "ja",
+            "max_seconds": 11.4559755,
+            "median_seconds": 4.7249723,
+            "p95_seconds": 11.4444068
+          }
+        ],
+        "physical_devices_tested": false,
+        "source_passes": 1,
+        "status": "passed",
+        "transcripts": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\italian-japanese-persistent\\01-threads-4-slots-1\\replay\\Meeting_2026-10-25_10-16-50",
+        "wall_seconds": 112.2022287
+      },
+      "resources": {
+        "system_cpu_percent": {
+          "mean": 9.29803400159688,
+          "max": 18.144568186593823
+        },
+        "system_used_ram_bytes": {
+          "mean": 62818767972.39216,
+          "max": 64065269760
+        },
+        "gpu_percent": {
+          "mean": 7.529411764705882,
+          "max": 88.0
+        },
+        "gpu_used_mib": {
+          "mean": 6334.176470588235,
+          "max": 6528.0
+        }
+      },
+      "folder": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\italian-japanese-persistent\\01-threads-4-slots-1"
+    }
+  ],
+  "updated_utc": "2026-10-25T17:18:44.210455+00:00",
+  "current_case": 1,
+  "threads": 4,
+  "slots": 1,
+  "resources": {
+    "wall_seconds": 112.39099999994505,
+    "system_cpu_percent": 4.936075597554201,
+    "system_used_ram_bytes": 62197198848,
+    "gpu_percent": 1.0,
+    "gpu_used_mib": 6346.0
+  }
+}

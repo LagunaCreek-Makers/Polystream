@@ -1,0 +1,92 @@
+{
+  "status": "completed_with_gaps",
+  "outputs": [
+    {
+      "language": "es",
+      "delivered": 38,
+      "untranslated": 0,
+      "median": 17.95953835,
+      "p95": 24.4888848,
+      "max": 24.8662913,
+      "missing_clause_ids": []
+    },
+    {
+      "language": "de",
+      "delivered": 38,
+      "untranslated": 0,
+      "median": 15.899540599999998,
+      "p95": 18.2838297,
+      "max": 18.5923534,
+      "missing_clause_ids": []
+    },
+    {
+      "language": "fr",
+      "delivered": 38,
+      "untranslated": 0,
+      "median": 12.840951650000001,
+      "p95": 18.5635713,
+      "max": 19.0326158,
+      "missing_clause_ids": []
+    },
+    {
+      "language": "zh-Hans",
+      "delivered": 38,
+      "untranslated": 0,
+      "median": 17.0313886,
+      "p95": 19.9483233,
+      "max": 20.1339457,
+      "missing_clause_ids": []
+    },
+    {
+      "language": "ru",
+      "delivered": 38,
+      "untranslated": 0,
+      "median": 19.8796787,
+      "p95": 27.9376527,
+      "max": 28.2159264,
+      "missing_clause_ids": []
+    },
+    {
+      "language": "it",
+      "delivered": 38,
+      "untranslated": 0,
+      "median": 4.7818999,
+      "p95": 12.9856824,
+      "max": 14.6191949,
+      "missing_clause_ids": []
+    },
+    {
+      "language": "ja",
+      "delivered": 38,
+      "untranslated": 0,
+      "median": 13.339711000000001,
+      "p95": 19.0287488,
+      "max": 19.0513379,
+      "missing_clause_ids": []
+    },
+    {
+      "language": "hi",
+      "delivered": 37,
+      "untranslated": 1,
+      "median": 11.1329487,
+      "p95": 15.0699343,
+      "max": 15.3185571,
+      "missing_clause_ids": [
+        13
+      ]
+    }
+  ],
+  "drain_seconds": 26.17784970000001,
+  "failures": [
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Hindi text translation was incomplete (finish_reason=length); stopped instead of speaking a truncated result",
+      "language": "hi",
+      "source_end_seconds": 38.16,
+      "source_seconds": 33.96,
+      "source_text": "to come forth by the gift and power of God unto the interpretation.",
+      "status": "untranslated"
+    }
+  ]
+}

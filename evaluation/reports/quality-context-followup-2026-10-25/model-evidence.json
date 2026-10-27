@@ -1,0 +1,7 @@
+{
+  "repo": "ggerganov/whisper.cpp",
+  "file": "ggml-small.en.bin",
+  "bytes": 487614201,
+  "sha256": "c6138d6d58ecc8322097e0f987c32f1be8bb0a18532a3f88f734d1bbf9c41e5d",
+  "installed_as_default": false
+}

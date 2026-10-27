@@ -1,0 +1,9 @@
+WARNING: JPCommonLabel_make() in jcomon_label.c: No phoneme.
+Traceback (most recent call last):
+  File "C:\Users\Paul Lott\Documents\GitHub\LagunaCreekMakers\live-translate-rs\scripts\piper_worker.py", line 33, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Paul Lott\Documents\GitHub\LagunaCreekMakers\live-translate-rs\scripts\piper_worker.py", line 31, in main
+    if not total:raise ValueError('Empty synthesis response')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty synthesis response

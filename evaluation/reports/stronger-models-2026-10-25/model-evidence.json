@@ -1,0 +1,22 @@
+[
+  {
+    "repo": "Qwen/Qwen3-8B-GGUF",
+    "file": "Qwen3-8B-Q4_K_M.gguf",
+    "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "expected_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "bytes": 5027783488,
+    "hash_verified": true,
+    "default_changed": false
+  },
+  {
+    "repo": "ggerganov/whisper.cpp",
+    "file": "ggml-medium.en.bin",
+    "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+    "expected_sha256": "cc37e93478338ec7700281a7ac30a10128929eb8f427dda2e865faa8f6da4356",
+    "sha256": "cc37e93478338ec7700281a7ac30a10128929eb8f427dda2e865faa8f6da4356",
+    "bytes": 1533774781,
+    "hash_verified": true,
+    "default_changed": false
+  }
+]

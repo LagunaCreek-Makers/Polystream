@@ -1,0 +1,7 @@
+{
+  "threads": 4,
+  "slots": 1,
+  "short_test_only": true,
+  "clear_gain": false,
+  "baseline_p95_span_seconds": 0.7657670999999997
+}

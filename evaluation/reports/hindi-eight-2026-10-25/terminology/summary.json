@@ -1,0 +1,19 @@
+{
+  "acoustic_latency_measured": false,
+  "application_version": "0.5.0",
+  "cases": 6,
+  "config": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\GitHub\\LagunaCreekMakers\\live-translate-rs\\offline.hi.json",
+  "failed": 0,
+  "includes_first_case": true,
+  "mode": "speech",
+  "ready_metric": "first_pcm_ms",
+  "schema_version": 1,
+  "successful_first_pcm_p50_ms": 270.808,
+  "successful_first_pcm_p95_ms": 5346.9181,
+  "successful_ready_p50_ms": 270.808,
+  "successful_ready_p95_ms": 5346.9181,
+  "translation_accuracy_scored": false,
+  "translation_cache_enabled": false,
+  "translation_cache_hits": 0,
+  "translation_domain": "latter_day_saint"
+}

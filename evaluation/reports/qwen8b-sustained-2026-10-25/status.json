@@ -1,0 +1,131 @@
+{
+  "phase": "completed",
+  "started_utc": "2026-10-26T04:06:02.834298+00:00",
+  "machine": "WORKSTATIONT440",
+  "language_cases": [
+    "es,de,zh-Hans,fr,ja,ru,ar,hi"
+  ],
+  "logical_processors": 64,
+  "input_seconds": 900.0,
+  "cases": [
+    {
+      "case": 1,
+      "threads": 4,
+      "slots": 1,
+      "summary": {
+        "accepted_clauses": 301,
+        "input_seconds": 900.0,
+        "music_excluded_seconds": 0.0,
+        "outputs": [
+          {
+            "completed": 300,
+            "handled": 301,
+            "language": "es",
+            "max_seconds": 33.5219472,
+            "median_seconds": 9.7213822,
+            "p95_seconds": 30.9991297,
+            "untranslated": 1
+          },
+          {
+            "completed": 300,
+            "handled": 301,
+            "language": "de",
+            "max_seconds": 35.138257,
+            "median_seconds": 12.2314294,
+            "p95_seconds": 28.365906,
+            "untranslated": 1
+          },
+          {
+            "completed": 300,
+            "handled": 301,
+            "language": "zh-Hans",
+            "max_seconds": 37.7777291,
+            "median_seconds": 10.0566044,
+            "p95_seconds": 29.1648381,
+            "untranslated": 1
+          },
+          {
+            "completed": 300,
+            "handled": 301,
+            "language": "fr",
+            "max_seconds": 36.2223146,
+            "median_seconds": 17.4047228,
+            "p95_seconds": 33.995381,
+            "untranslated": 1
+          },
+          {
+            "completed": 300,
+            "handled": 301,
+            "language": "ja",
+            "max_seconds": 45.3548476,
+            "median_seconds": 12.7007787,
+            "p95_seconds": 39.2905453,
+            "untranslated": 1
+          },
+          {
+            "completed": 300,
+            "handled": 301,
+            "language": "ru",
+            "max_seconds": 47.4249999,
+            "median_seconds": 27.1465447,
+            "p95_seconds": 44.4002882,
+            "untranslated": 1
+          },
+          {
+            "completed": 298,
+            "handled": 301,
+            "language": "ar",
+            "max_seconds": 96.6442072,
+            "median_seconds": 70.5614581,
+            "p95_seconds": 91.9149386,
+            "untranslated": 3
+          },
+          {
+            "completed": 300,
+            "handled": 301,
+            "language": "hi",
+            "max_seconds": 19.1273098,
+            "median_seconds": 5.6633191,
+            "p95_seconds": 16.571003,
+            "untranslated": 1
+          }
+        ],
+        "physical_devices_tested": false,
+        "source_passes": 1,
+        "status": "completed_with_gaps",
+        "transcripts": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\qwen8b-eight-stream-15min\\01-threads-4-slots-1\\replay\\Meeting_2026-10-25_21-06-10",
+        "wall_seconds": 977.8264707
+      },
+      "resources": {
+        "system_cpu_percent": {
+          "mean": 38.74072861718018,
+          "max": 79.30029154518951
+        },
+        "system_used_ram_bytes": {
+          "mean": 52434847583.64206,
+          "max": 54450262016
+        },
+        "gpu_percent": {
+          "mean": 44.064876957494405,
+          "max": 93.0
+        },
+        "gpu_used_mib": {
+          "mean": 7749.404921700224,
+          "max": 8259.0
+        }
+      },
+      "folder": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\qwen8b-eight-stream-15min\\01-threads-4-slots-1"
+    }
+  ],
+  "updated_utc": "2026-10-26T04:22:31.488216+00:00",
+  "current_case": 1,
+  "threads": 4,
+  "slots": 1,
+  "resources": {
+    "wall_seconds": 979.6089999999999,
+    "system_cpu_percent": 10.363513208399189,
+    "system_used_ram_bytes": 50826080256,
+    "gpu_percent": 1.0,
+    "gpu_used_mib": 7745.0
+  }
+}

@@ -18,10 +18,15 @@ def check_configuration(config, root):
     errors = []
     required = {'asr_port', 'translation_port', 'piper_binary', 'voices', 'whisper_server',
                 'whisper_model', 'llama_server', 'translation_model', 'threads', 'gpu_layers'}
-    optional = {'translation_domain'}
+    optional = {'translation_domain', 'piper_python_voices', 'piper_worker', 'asr_custom_adapter', 'translation_custom_adapter', 'asr_launch_args', 'translation_launch_args'}
     if not required.issubset(config) or set(config) - required - optional:
         errors.append(f'Configuration fields differ: missing={sorted(required - set(config))}, unknown={sorted(set(config) - required - optional)}')
         return errors
+    for key in ('asr_custom_adapter', 'translation_custom_adapter'):
+        if type(config.get(key, False)) is not bool: errors.append(f'{key} must be boolean')
+    for key in ('asr_launch_args', 'translation_launch_args'):
+        value=config.get(key, [])
+        if not isinstance(value, list) or any(not isinstance(v,str) or '\x00' in v for v in value): errors.append(f'{key} must be a list of argument strings')
     if config.get('translation_domain','general') not in ('general','latter_day_saint'):
         errors.append('translation_domain must be general or latter_day_saint')
     for key, low, high in [('asr_port', 1, 65535), ('translation_port', 1, 65535),
@@ -41,11 +46,17 @@ def check_configuration(config, root):
             with path.open('rb') as stream:
                 if stream.read(len(magic)) != magic: errors.append(f'{label}: unexpected model format {path}')
         return path
+    runtimes = config.get('piper_python_voices', {})
+    if not isinstance(runtimes, dict): errors.append('piper_python_voices must be a mapping'); return errors
+    if runtimes: file_check(config.get('piper_worker','scripts/piper_worker.py'), 'Piper worker script')
+    for code, runtime in runtimes.items():
+        if code not in config.get('voices', {}): errors.append(f'{code}: runtime has no configured voice')
+        file_check(runtime, f'{code} Piper Python runtime', executable=True)
     for key in ('whisper_server', 'llama_server', 'piper_binary'):
         file_check(config[key], key, executable=True)
     # Legacy Whisper GGML has little-endian GGML magic; llama consumes GGUF.
-    file_check(config['whisper_model'], 'whisper_model', magic=b'lmgg')
-    file_check(config['translation_model'], 'translation_model', magic=b'GGUF')
+    file_check(config['whisper_model'], 'whisper_model', magic=None if config.get('asr_custom_adapter',False) else b'lmgg')
+    file_check(config['translation_model'], 'translation_model', magic=None if config.get('translation_custom_adapter',False) else b'GGUF')
     voices = config['voices']
     if not isinstance(voices, dict): errors.append('voices must be a mapping'); return errors
     for language in ('es', 'de'):

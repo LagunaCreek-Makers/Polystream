@@ -1,0 +1,44 @@
+[
+  {
+    "runtime": "Per-phrase process baseline",
+    "outputs": [
+      {
+        "language": "it",
+        "clauses": 38,
+        "median": 74.8655482,
+        "p95": 142.3424259,
+        "maximum": 145.5343163
+      },
+      {
+        "language": "ja",
+        "clauses": 38,
+        "median": 67.93395004999999,
+        "p95": 132.7681072,
+        "maximum": 136.1435704
+      }
+    ],
+    "drain_seconds": 144.5849632,
+    "aligned_srt": true
+  },
+  {
+    "runtime": "Persistent worker; 4 CPU threads/voice",
+    "outputs": [
+      {
+        "language": "it",
+        "clauses": 38,
+        "median": 3.3996494999999998,
+        "p95": 5.4671353,
+        "maximum": 6.8504049
+      },
+      {
+        "language": "ja",
+        "clauses": 38,
+        "median": 4.7112153,
+        "p95": 11.4444068,
+        "maximum": 11.4559755
+      }
+    ],
+    "drain_seconds": 11.50016620000001,
+    "aligned_srt": true
+  }
+]

@@ -28,12 +28,11 @@ struct Case {
     reference_translation: Option<String>,
 }
 fn language(code: &str) -> Result<Language> {
-    match code {
-        "en" => Ok(Language::English),
-        "es" => Ok(Language::Spanish),
-        "de" => Ok(Language::German),
-        _ => anyhow::bail!("Unsupported language: {code}"),
-    }
+    live_translate_rs::language::LANGUAGES
+        .iter()
+        .find(|entry| entry.text_code == code)
+        .map(|entry| entry.language)
+        .with_context(|| format!("Unsupported language: {code}"))
 }
 fn cases(path: &Path) -> Result<Vec<Case>> {
     anyhow::ensure!(
@@ -60,10 +59,7 @@ fn validate_cases(cases: &[Case]) -> Result<()> {
         );
         // Prefixing output filenames avoids Windows reserved device basenames.
         validate_pair(language(&case.source)?, language(&case.target)?)?;
-        anyhow::ensure!(
-            matches!(case.target.as_str(), "es" | "de"),
-            "Target must be es or de"
-        );
+        anyhow::ensure!(case.target != "en", "Choose an enabled non-English target");
         anyhow::ensure!(
             case.text.is_some() != case.audio.is_some(),
             "Provide exactly one of text/audio"

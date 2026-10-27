@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "outputs": [
+    {
+      "language": "ar",
+      "delivered": 38,
+      "untranslated": 0,
+      "median": 10.6406664,
+      "p95": 23.7008848,
+      "max": 23.9823476,
+      "missing_clause_ids": []
+    }
+  ],
+  "drain_seconds": 25.03678570000001,
+  "failures": []
+}

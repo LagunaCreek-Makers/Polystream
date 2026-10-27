@@ -1,0 +1,223 @@
+{
+  "status": "completed_with_gaps",
+  "outputs": [
+    {
+      "language": "es",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 9.714682750000001,
+      "p95": 30.9991297,
+      "max": 33.5219472,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "de",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 12.2198931,
+      "p95": 28.365906,
+      "max": 35.138257,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "zh-Hans",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 9.9799741,
+      "p95": 29.1648381,
+      "max": 37.7777291,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "fr",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 17.36624645,
+      "p95": 33.995381,
+      "max": 36.2223146,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "ja",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 12.66681435,
+      "p95": 39.2905453,
+      "max": 45.3548476,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "ru",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 27.088954100000002,
+      "p95": 44.4002882,
+      "max": 47.4249999,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "ar",
+      "delivered": 298,
+      "untranslated": 3,
+      "median": 70.39835805,
+      "p95": 91.9149386,
+      "max": 96.6442072,
+      "missing_clause_ids": [
+        13,
+        71,
+        261
+      ]
+    },
+    {
+      "language": "hi",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 5.6572726,
+      "p95": 16.571003,
+      "max": 19.1273098,
+      "missing_clause_ids": [
+        13
+      ]
+    }
+  ],
+  "drain_seconds": 77.82647069999996,
+  "failures": [
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "zh-Hans",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "ja",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "es",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "fr",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "de",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "hi",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "ru",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "ar",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 71,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 197.2,
+      "source_seconds": 195.72,
+      "source_text": "Christopher Sim.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 261,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 790.7,
+      "source_seconds": 787.44,
+      "source_text": "closer to our homes and hearts.",
+      "status": "untranslated"
+    }
+  ],
+  "input_seconds": 900,
+  "accepted_clauses": 301,
+  "audio_deliveries": 2398,
+  "untranslated_count": 10,
+  "resources": {
+    "system_cpu_percent": {
+      "mean": 38.74072861718018,
+      "max": 79.30029154518951
+    },
+    "system_used_ram_bytes": {
+      "mean": 52434847583.64206,
+      "max": 54450262016
+    },
+    "gpu_percent": {
+      "mean": 44.064876957494405,
+      "max": 93.0
+    },
+    "gpu_used_mib": {
+      "mean": 7749.404921700224,
+      "max": 8259.0
+    }
+  },
+  "maximum_sampled_pending_source_age_seconds": 97.3802369,
+  "cutoffs": 0,
+  "retries": 0
+}

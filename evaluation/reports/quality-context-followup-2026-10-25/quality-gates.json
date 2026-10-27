@@ -1,0 +1,130 @@
+[
+  {
+    "language": "ar",
+    "source": "The Book of Mormon.",
+    "translation": "كتاب مورمون.",
+    "focus": "existing verified Book of Mormon name",
+    "passed": true,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "ar",
+    "source": "The plates of Nephi.",
+    "translation": "اللوحات نافي.",
+    "focus": "writing plates, not leaves/pictures",
+    "passed": false,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "ar",
+    "source": "Mormon wrote an account.",
+    "translation": "كتب مورمون حسابًا.",
+    "focus": "historical narrative, not bank account",
+    "passed": false,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "ar",
+    "source": "The meeting starts at nine.",
+    "translation": "الاجتماع يبدأ في التاسع.",
+    "focus": "native semantic review needed",
+    "passed": null,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "ar",
+    "source": "Do not change the number fifteen.",
+    "translation": "لا تغير العدد пятнадцать.",
+    "focus": "preserve fifteen, limited surface-form check",
+    "passed": false,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "ar",
+    "source": "She bought fifteen plates for dinner.",
+    "translation": "اشترت سبع عشرة وعاء للعشاء.",
+    "focus": "preserve fifteen, limited surface-form check",
+    "passed": false,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "ar",
+    "source": "The bank account is closed.",
+    "translation": "الحساب البنكي مغلق.",
+    "focus": "native semantic review needed",
+    "passed": null,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "ar",
+    "source": "I do not agree.",
+    "translation": "لا أتفق.",
+    "focus": "preserve negation, limited surface-form check",
+    "passed": true,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "hi",
+    "source": "The Book of Mormon.",
+    "translation": "मॉरमन की पुस्तक।",
+    "focus": "existing verified Book of Mormon name",
+    "passed": true,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "hi",
+    "source": "The plates of Nephi.",
+    "translation": "नफी के पत्ते।",
+    "focus": "writing plates, not leaves/pictures",
+    "passed": false,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "hi",
+    "source": "Mormon wrote an account.",
+    "translation": "मॉरमन ने एक खाता लिखा।",
+    "focus": "historical narrative, not bank account",
+    "passed": false,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "hi",
+    "source": "The meeting starts at nine.",
+    "translation": "मीटिंग नौ बजे से शुरू होती है।",
+    "focus": "native semantic review needed",
+    "passed": null,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "hi",
+    "source": "Do not change the number fifteen.",
+    "translation": "अटे सौ पाच सौ नहीं बदलो।",
+    "focus": "preserve fifteen, limited surface-form check",
+    "passed": false,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "hi",
+    "source": "She bought fifteen plates for dinner.",
+    "translation": "उसने दिनभर के लिए पंद्रह पैटर खरीदी।",
+    "focus": "preserve fifteen, limited surface-form check",
+    "passed": true,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "hi",
+    "source": "The bank account is closed.",
+    "translation": "बैंक काउंट बंद है।",
+    "focus": "native semantic review needed",
+    "passed": null,
+    "automatic_check_is_not_accuracy_certification": true
+  },
+  {
+    "language": "hi",
+    "source": "I do not agree.",
+    "translation": "मैं सहमत नहीं हूं।",
+    "focus": "preserve negation, limited surface-form check",
+    "passed": true,
+    "automatic_check_is_not_accuracy_certification": true
+  }
+]

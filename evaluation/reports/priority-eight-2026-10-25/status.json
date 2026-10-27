@@ -1,0 +1,96 @@
+{
+  "phase": "failed",
+  "started_utc": "2026-10-25T23:35:56.033826+00:00",
+  "machine": "WORKSTATIONT440",
+  "language_cases": [
+    "es,de,zh-Hans,fr,ja,ru,ar,hi"
+  ],
+  "logical_processors": 64,
+  "input_seconds": 900.0,
+  "cases": [],
+  "updated_utc": "2026-10-25T23:36:59.010790+00:00",
+  "current_case": 1,
+  "threads": 4,
+  "slots": 1,
+  "progress": {
+    "consumed_seconds": 56.14,
+    "input_seconds": 900.0,
+    "outputs": [
+      {
+        "completed": 13,
+        "language": "es",
+        "last_delay_seconds": 6.4324285,
+        "oldest_seconds": 0.0,
+        "pending": 0,
+        "untranslated": 0
+      },
+      {
+        "completed": 12,
+        "language": "de",
+        "last_delay_seconds": 9.1683804,
+        "oldest_seconds": 7.6003991,
+        "pending": 1,
+        "untranslated": 0
+      },
+      {
+        "completed": 13,
+        "language": "zh-Hans",
+        "last_delay_seconds": 5.719066,
+        "oldest_seconds": 0.0,
+        "pending": 0,
+        "untranslated": 0
+      },
+      {
+        "completed": 13,
+        "language": "fr",
+        "last_delay_seconds": 5.3583118,
+        "oldest_seconds": 0.0,
+        "pending": 0,
+        "untranslated": 0
+      },
+      {
+        "completed": 13,
+        "language": "ja",
+        "last_delay_seconds": 4.5052005,
+        "oldest_seconds": 0.0,
+        "pending": 0,
+        "untranslated": 0
+      },
+      {
+        "completed": 13,
+        "language": "ru",
+        "last_delay_seconds": 6.048235,
+        "oldest_seconds": 0.0,
+        "pending": 0,
+        "untranslated": 0
+      },
+      {
+        "completed": 8,
+        "language": "ar",
+        "last_delay_seconds": 16.2157759,
+        "oldest_seconds": 19.6404096,
+        "pending": 4,
+        "untranslated": 1
+      },
+      {
+        "completed": 12,
+        "language": "hi",
+        "last_delay_seconds": 5.0570714,
+        "oldest_seconds": 7.6004115,
+        "pending": 1,
+        "untranslated": 0
+      }
+    ],
+    "pending_source_oldest_seconds": 19.6403918,
+    "pending_source_seconds": 16.04,
+    "wall_seconds": 56.1404673
+  },
+  "resources": {
+    "wall_seconds": 57.09399999992456,
+    "system_cpu_percent": 24.15334749077903,
+    "system_used_ram_bytes": 65924141056,
+    "gpu_percent": 41.0,
+    "gpu_used_mib": 6268.0
+  },
+  "error": "Replay exited 1; inspect C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\priority-eight-15min\\01-threads-4-slots-1"
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "scope": "Mechanical synthesis and limited name substring assertions only; native quality review pending"
+}

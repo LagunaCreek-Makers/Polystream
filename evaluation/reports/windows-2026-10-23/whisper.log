@@ -1,0 +1,54 @@
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 16310 MiB):
+  Device 0: NVIDIA GeForce RTX 5060 Ti, compute capability 12.0, VMM: yes, VRAM: 16310 MiB
+load_backend: loaded CUDA backend from C:\Users\Paul Lott\Documents\GitHub\LagunaCreekMakers\live-translate-rs\engines\whisper-cuda\Release\ggml-cuda.dll
+load_backend: loaded CPU backend from C:\Users\Paul Lott\Documents\GitHub\LagunaCreekMakers\live-translate-rs\engines\whisper-cuda\Release\ggml-cpu-cascadelake.dll
+whisper_init_from_file_with_params_no_state: loading model from 'C:\Users\Paul Lott\Documents\GitHub\LagunaCreekMakers\live-translate-rs\models\whisper\ggml-base.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_init_with_params_no_state: devices    = 2
+whisper_init_with_params_no_state: backends   = 2
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51865
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 512
+whisper_model_load: n_audio_head  = 8
+whisper_model_load: n_audio_layer = 6
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 512
+whisper_model_load: n_text_head   = 8
+whisper_model_load: n_text_layer  = 6
+whisper_model_load: n_mels        = 80
+whisper_model_load: ftype         = 1
+whisper_model_load: qntvr         = 0
+whisper_model_load: type          = 2 (base)
+whisper_model_load: adding 1608 extra tokens
+whisper_model_load: n_langs       = 99
+whisper_model_load:        CUDA0 total size =   147.37 MB
+whisper_model_load: model size    =  147.37 MB
+whisper_backend_init_gpu: device 0: CUDA0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: CUDA0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using CUDA0 backend
+whisper_init_state: kv self size  =    6.29 MB
+whisper_init_state: kv cross size =   18.87 MB
+whisper_init_state: kv pad  size  =    3.15 MB
+whisper_init_state: compute buffer (conv)   =   17.24 MB
+whisper_init_state: compute buffer (encode) =   23.09 MB
+whisper_init_state: compute buffer (cross)  =    4.66 MB
+whisper_init_state: compute buffer (decode) =   97.29 MB
+
+system_info: n_threads = 4 / 64 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | CUDA : ARCHS = 500,610,700,750,800,860,890,900 | FA_QUANTS = q4_0-q4_0,q8_0-q8_0,f16-f16,bf16-bf16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VNNI = 1 | OPENMP = 1 | REPACK = 1 | 
+
+operator (): processing 'warmup.wav' (8000 samples, 0.5 sec), 4 threads, 1 processors, lang = en, task = transcribe, timestamps = 1 ...
+
+
+system_info: n_threads = 4 / 64 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | CUDA : ARCHS = 500,610,700,750,800,860,890,900 | FA_QUANTS = q4_0-q4_0,q8_0-q8_0,f16-f16,bf16-bf16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VNNI = 1 | OPENMP = 1 | REPACK = 1 | 
+
+operator (): processing 'live.wav' (60080 samples, 3.8 sec), 4 threads, 1 processors, lang = en, task = transcribe, timestamps = 1 ...
+
+
+system_info: n_threads = 4 / 64 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | CUDA : ARCHS = 500,610,700,750,800,860,890,900 | FA_QUANTS = q4_0-q4_0,q8_0-q8_0,f16-f16,bf16-bf16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VNNI = 1 | OPENMP = 1 | REPACK = 1 | 
+
+operator (): processing 'live.wav' (60080 samples, 3.8 sec), 4 threads, 1 processors, lang = en, task = transcribe, timestamps = 1 ...
+

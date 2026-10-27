@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-25",
+  "scope": "Development source facts; no runtime glossary replacement or native review approval",
+  "candidate": {
+    "source": "doctrinal foundation",
+    "target_language": "ar",
+    "target": "الأساس العقائدي",
+    "sources": {
+      "en": "https://www.churchofjesuschrist.org/study/manual/general-handbook?lang=eng",
+      "ar": "https://www.churchofjesuschrist.org/study/manual/general-handbook?lang=ara"
+    },
+    "locator": "table of contents section heading",
+    "allowed_context": "Church doctrine, only when the supplied phrase expresses doctrinal foundation",
+    "excluded_contexts": [
+      "mythological foundation",
+      "physical building foundation"
+    ],
+    "status": "source-verified candidate; prompt/synthesis regression pending"
+  },
+  "coverage": [
+    {
+      "path": "general-conference/2026/10/12gong",
+      "language": "en",
+      "status": "body retrieved; matches examined source phrases"
+    },
+    {
+      "path": "general-conference/2026/10/12gong",
+      "language": "ar",
+      "status": "title-only page retrieved, no paired talk body verified"
+    },
+    {
+      "path": "general-conference/2026/10/12gong",
+      "language": "hi",
+      "status": "retrieval failed; unavailable to this test, not proof of absent translation"
+    },
+    {
+      "path": "manual/general-handbook",
+      "language": "hi",
+      "status": "retrieval failed; do not fabricate reference wording"
+    }
+  ],
+  "test_split": "development; same talk already examined, never held out"
+}

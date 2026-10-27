@@ -1,0 +1,126 @@
+{
+  "phase": "failed",
+  "started_utc": "2026-10-25T16:57:28.082370+00:00",
+  "machine": "WORKSTATIONT440",
+  "language_cases": [
+    "ru,eu",
+    "es,de,fr,zh-Hans,ru,eu"
+  ],
+  "logical_processors": 64,
+  "input_seconds": 100.7020625,
+  "cases": [
+    {
+      "case": 1,
+      "threads": 4,
+      "slots": 1,
+      "summary": {
+        "accepted_clauses": 38,
+        "input_seconds": 100.7020625,
+        "music_excluded_seconds": 0.0,
+        "outputs": [
+          {
+            "completed": 38,
+            "language": "ru",
+            "max_seconds": 11.4361401,
+            "median_seconds": 6.4237646999999996,
+            "p95_seconds": 11.2289531
+          },
+          {
+            "completed": 38,
+            "language": "eu",
+            "max_seconds": 37.8802328,
+            "median_seconds": 20.7206458,
+            "p95_seconds": 36.7703767
+          }
+        ],
+        "physical_devices_tested": false,
+        "source_passes": 1,
+        "status": "passed",
+        "transcripts": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\russian-basque-six-stream\\01-threads-4-slots-1\\replay\\Meeting_2026-10-25_09-57-34",
+        "wall_seconds": 143.2049006
+      },
+      "resources": {
+        "system_cpu_percent": {
+          "mean": 15.138347622589617,
+          "max": 33.31847559616671
+        },
+        "system_used_ram_bytes": {
+          "mean": 61471426339.44615,
+          "max": 62163972096
+        },
+        "gpu_percent": {
+          "mean": 10.046153846153846,
+          "max": 91.0
+        },
+        "gpu_used_mib": {
+          "mean": 6415.738461538462,
+          "max": 6626.0
+        }
+      },
+      "folder": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\russian-basque-six-stream\\01-threads-4-slots-1"
+    }
+  ],
+  "updated_utc": "2026-10-25T17:01:23.030707+00:00",
+  "current_case": 2,
+  "threads": 4,
+  "slots": 1,
+  "resources": {
+    "wall_seconds": 77.68799999996554,
+    "system_cpu_percent": 6.246532785975811,
+    "system_used_ram_bytes": 61437632512,
+    "gpu_percent": 55.0,
+    "gpu_used_mib": 6337.0
+  },
+  "progress": {
+    "consumed_seconds": 76.56,
+    "input_seconds": 100.7020625,
+    "outputs": [
+      {
+        "completed": 22,
+        "language": "es",
+        "last_delay_seconds": 7.6358554,
+        "oldest_seconds": 15.6805416,
+        "pending": 5
+      },
+      {
+        "completed": 23,
+        "language": "de",
+        "last_delay_seconds": 6.3594745,
+        "oldest_seconds": 12.8605495,
+        "pending": 4
+      },
+      {
+        "completed": 23,
+        "language": "fr",
+        "last_delay_seconds": 7.155527,
+        "oldest_seconds": 12.8605535,
+        "pending": 4
+      },
+      {
+        "completed": 23,
+        "language": "zh-Hans",
+        "last_delay_seconds": 7.5686942,
+        "oldest_seconds": 12.8605568,
+        "pending": 4
+      },
+      {
+        "completed": 22,
+        "language": "ru",
+        "last_delay_seconds": 9.5879089,
+        "oldest_seconds": 15.6805596,
+        "pending": 5
+      },
+      {
+        "completed": 18,
+        "language": "eu",
+        "last_delay_seconds": 21.0927741,
+        "oldest_seconds": 29.1205657,
+        "pending": 9
+      }
+    ],
+    "pending_source_oldest_seconds": 29.1205372,
+    "pending_source_seconds": 26.56,
+    "wall_seconds": 76.5606488
+  },
+  "error": "Replay exited 1; inspect C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\russian-basque-six-stream\\02-threads-4-slots-1"
+}

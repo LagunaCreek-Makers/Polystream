@@ -1,0 +1,333 @@
+{
+  "status": "completed_with_gaps",
+  "outputs": [
+    {
+      "language": "es",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 11.5980545,
+      "p95": 29.8135604,
+      "max": 41.4306567,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "de",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 13.194323449999999,
+      "p95": 29.2392792,
+      "max": 37.9019092,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "zh-Hans",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 7.4589538,
+      "p95": 24.966442,
+      "max": 37.6948474,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "fr",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 17.6657934,
+      "p95": 31.8476556,
+      "max": 39.8322647,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "ja",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 6.690751349999999,
+      "p95": 26.5412863,
+      "max": 40.0157211,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "ru",
+      "delivered": 300,
+      "untranslated": 1,
+      "median": 23.0640389,
+      "p95": 37.1729549,
+      "max": 44.567053,
+      "missing_clause_ids": [
+        13
+      ]
+    },
+    {
+      "language": "ar",
+      "delivered": 291,
+      "untranslated": 10,
+      "median": 57.0892506,
+      "p95": 77.7144741,
+      "max": 84.9587189,
+      "missing_clause_ids": [
+        13,
+        41,
+        129,
+        171,
+        198,
+        238,
+        254,
+        266,
+        274,
+        280
+      ]
+    },
+    {
+      "language": "hi",
+      "delivered": 297,
+      "untranslated": 4,
+      "median": 5.049047,
+      "p95": 13.578934,
+      "max": 19.443506,
+      "missing_clause_ids": [
+        13,
+        157,
+        221,
+        230
+      ]
+    }
+  ],
+  "drain_seconds": 63.00611730000003,
+  "failures": [
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "de",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "zh-Hans",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "fr",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "ja",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "es",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "ru",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "hi",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 13,
+      "delay_seconds": null,
+      "error": "Translation contains no letters or numbers for speech synthesis",
+      "language": "ar",
+      "source_end_seconds": 56.54,
+      "source_seconds": 52.54,
+      "source_text": "\u266a",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 41,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 135.16,
+      "source_seconds": 133.68,
+      "source_text": "at the organ.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 129,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 403.42,
+      "source_seconds": 402.52,
+      "source_text": "and his counselors.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 157,
+      "delay_seconds": null,
+      "error": "Hindi text translation was incomplete (finish_reason=length); stopped instead of speaking a truncated result",
+      "language": "hi",
+      "source_end_seconds": 470.74,
+      "source_seconds": 469.1,
+      "source_text": "feeling lifted and strengthened through.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 171,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 519.9,
+      "source_seconds": 518.34,
+      "source_text": "Dallin Harris Oaks.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 198,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 599.74,
+      "source_seconds": 598.38,
+      "source_text": "Patrick Kiran.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 221,
+      "delay_seconds": null,
+      "error": "Hindi text translation was incomplete (finish_reason=length); stopped instead of speaking a truncated result",
+      "language": "hi",
+      "source_end_seconds": 672.06,
+      "source_seconds": 669.7,
+      "source_text": "as presently constituted.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 230,
+      "delay_seconds": null,
+      "error": "Hindi text translation was incomplete (finish_reason=length); stopped instead of speaking a truncated result",
+      "language": "hi",
+      "source_end_seconds": 702.24,
+      "source_seconds": 699.9,
+      "source_text": "He will be followed by his sister.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 238,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 724.04,
+      "source_seconds": 722.0,
+      "source_text": "Elder Zora Corset.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 254,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 770.88,
+      "source_seconds": 769.88,
+      "source_text": "harmony and harmony.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 266,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 802.94,
+      "source_seconds": 801.3,
+      "source_text": "Doctrinal Foundation.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 274,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 829.48,
+      "source_seconds": 825.54,
+      "source_text": "but by covenant commitment, sacrifice and consecration.",
+      "status": "untranslated"
+    },
+    {
+      "clause_id": 280,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 843.96,
+      "source_seconds": 841.74,
+      "source_text": "Second, doctrinal foundation.",
+      "status": "untranslated"
+    }
+  ],
+  "input_seconds": 900,
+  "accepted_clauses": 301,
+  "audio_deliveries": 2388,
+  "untranslated_count": 20,
+  "resources": {
+    "system_cpu_percent": {
+      "mean": 40.76095109048754,
+      "max": 86.72361067172835
+    },
+    "system_used_ram_bytes": {
+      "mean": 52433846421.62557,
+      "max": 56050974720
+    },
+    "gpu_percent": {
+      "mean": 30.970319634703195,
+      "max": 92.0
+    },
+    "gpu_used_mib": {
+      "mean": 6029.821917808219,
+      "max": 6753.0
+    }
+  },
+  "maximum_sampled_pending_source_age_seconds": 84.9804233,
+  "cutoffs": 0,
+  "retries": 0
+}

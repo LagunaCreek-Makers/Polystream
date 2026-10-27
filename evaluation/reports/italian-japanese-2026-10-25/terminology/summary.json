@@ -1,0 +1,19 @@
+{
+  "acoustic_latency_measured": false,
+  "application_version": "0.5.0",
+  "cases": 8,
+  "config": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\GitHub\\LagunaCreekMakers\\live-translate-rs\\offline.modern-piper.json",
+  "failed": 0,
+  "includes_first_case": true,
+  "mode": "speech",
+  "ready_metric": "first_pcm_ms",
+  "schema_version": 1,
+  "successful_first_pcm_p50_ms": 215.25469999999999,
+  "successful_first_pcm_p95_ms": 5007.3977,
+  "successful_ready_p50_ms": 215.25469999999999,
+  "successful_ready_p95_ms": 5007.3977,
+  "translation_accuracy_scored": false,
+  "translation_cache_enabled": false,
+  "translation_cache_hits": 0,
+  "translation_domain": "latter_day_saint"
+}

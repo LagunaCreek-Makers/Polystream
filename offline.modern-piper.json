@@ -1,0 +1,26 @@
+{
+  "asr_port": 8178,
+  "translation_port": 8179,
+  "piper_binary": "engines/piper/piper/piper.exe",
+  "voices": {
+    "es": "models/piper/es_ES-sharvard-medium.onnx",
+    "de": "models/piper/de_DE-thorsten-medium.onnx",
+    "zh-Hans": "models/piper/zh_CN-huayan-medium.onnx",
+    "fr": "models/piper/fr_FR-siwis-medium.onnx",
+    "ru": "models/piper/ru_RU-denis-medium.onnx",
+    "eu": "models/piper/eu_ES-antton-medium.onnx",
+    "it": "models/piper/it_IT-serena-medium.onnx",
+    "ja": "models/piper/ja_JP-hi_fi_captain-medium.onnx"
+  },
+  "whisper_server": "engines/whisper-cuda/Release/whisper-server.exe",
+  "whisper_model": "models/whisper/ggml-base.bin",
+  "llama_server": "engines/llama-cuda/llama-server.exe",
+  "translation_model": "models/translation/Qwen3-4B-Q4_K_M.gguf",
+  "threads": 4,
+  "gpu_layers": 99,
+  "translation_domain": "latter_day_saint",
+  "piper_python_voices": {
+    "it": "engines/piper-modern/venv/Scripts/python.exe",
+    "ja": "engines/piper-modern/venv/Scripts/python.exe"
+  }
+}

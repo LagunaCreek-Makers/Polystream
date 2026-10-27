@@ -1,0 +1,22 @@
+from pathlib import Path
+import json,math,re,statistics,sys
+base=Path(sys.argv[1]);state=json.loads((base/'status.json').read_text());assert state['phase']=='completed'
+summary=json.loads((base/'01-threads-4-slots-1/replay/summary.json').read_text());meeting=Path(summary['transcripts']);delays=[json.loads(row) for row in (meeting/'delays.jsonl').read_text(encoding='utf-8').splitlines()];failures=[json.loads(row) for row in (meeting/'failures.jsonl').read_text(encoding='utf-8').splitlines()];stats=[]
+srts={f.name:re.findall(r'(?m)^\d+\n(\d\d:\d\d:\d\d,\d{3} --> \d\d:\d\d:\d\d,\d{3})',f.read_text(encoding='utf-8')) for f in meeting.glob('*.srt')};source=next(v for k,v in srts.items() if k.startswith('English'));assert all(v==source for v in srts.values())
+lines=['# Fault-tolerant eight-language replay','',f"Run status: {summary['status']}. Input {summary['input_seconds']:.3f}s; one shared recognition pass. All subtitle cue timestamps align, including untranslated English placeholders.",'', '| Language | Delivered | Untranslated | Median / p95 / max delivered delay (s) |','|---|---:|---:|---|']
+sys.path.insert(0,str(Path('meeting-stress/plot-packages').resolve()))
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+fig,ax=plt.subplots(figsize=(12,6))
+for output in summary['outputs']:
+    code=output['language'];good=[row for row in delays if row['language']==code];bad=[row for row in failures if row['language']==code];values=sorted(row['delay_seconds'] for row in good)
+    assert len(good)==output['completed'] and len(bad)==output['untranslated'];assert len(good)+len(bad)==len(source);assert not ({row['clause_id'] for row in good}&{row['clause_id'] for row in bad})
+    row=dict(language=code,delivered=len(good),untranslated=len(bad),median=statistics.median(values) if values else None,p95=values[math.ceil(.95*len(values))-1] if values else None,max=max(values) if values else None,missing_clause_ids=[row['clause_id'] for row in bad]);stats.append(row)
+    metric=f"{row['median']:.2f} / {row['p95']:.2f} / {row['max']:.2f}" if values else 'unmeasured'
+    lines.append(f"| {code} | {len(good)} | {len(bad)} | {metric} |")
+    points=sorted([(row['source_seconds'],row['delay_seconds']) for row in good]+[(row['source_seconds'],float('nan')) for row in bad]);ax.plot([row[0] for row in points],[row[1] for row in points],'.-',markersize=3,label=f'{code} ({len(bad)} untranslated)')
+    for failed in bad:lines += ['',f"{code} clause {failed['clause_id']} at {failed['source_seconds']:.2f}s: {failed['error']}"]
+drain=summary['wall_seconds']-summary['input_seconds'];lines += ['',f'Final drain: {drain:.2f}s. Successful output timings exclude untranslated clauses. Failed clauses have no PCM delay; the plot uses NaN breaks rather than drawing through them or assigning zero delay.','', 'Markers are saved as quoted Untranslated: followed by original source text in each affected target SRT and shown in live captions. They are not spoken through a target-language voice. Failure records are durable in failures.jsonl; delivered PCM timing remains in delays.jsonl. Other language routes continue independently. English transcript remains available.','', 'Recoverable translation request/HTTP/model-output failures are clause-local. Cancellation, source-recognition failures, storage failures, synthesis/playback failures and unexpected panics remain fatal. A synthesis failure after partial audio is not silently labeled untranslated. No blind retry loop or completed-quotation fallback was added.','', 'Source phrase start to first queued PCM; physical acoustic latency not measured. This is a short development replay, not sustained eight-language capacity or native-speaker quality approval. Older failed attempts remain preserved.']
+ax.set(xlabel='Source time (seconds)',ylabel='Delivered first queued PCM delay (seconds)',xlim=(0,summary['input_seconds']),title='Eight languages: blank curve sections denote untranslated clauses');ax.grid(alpha=.2);ax.legend(ncol=4);fig.tight_layout();fig.savefig(base/'fault-tolerant-delay.png',dpi=160)
+(base/'fault-tolerance-report.md').write_text('\n'.join(lines),encoding='utf-8');(base/'fault-tolerance-statistics.json').write_text(json.dumps(dict(status=summary['status'],outputs=stats,drain_seconds=drain,failures=failures),indent=2));print(json.dumps(dict(status=summary['status'],outputs=stats,drain_seconds=drain),indent=2))

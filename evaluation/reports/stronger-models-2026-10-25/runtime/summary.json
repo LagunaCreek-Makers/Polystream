@@ -1,0 +1,19 @@
+{
+  "acoustic_latency_measured": false,
+  "application_version": "0.5.0",
+  "cases": 46,
+  "config": "\\\\?\\C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\qwen8b-runtime\\config.json",
+  "failed": 0,
+  "includes_first_case": true,
+  "mode": "speech",
+  "ready_metric": "first_pcm_ms",
+  "schema_version": 1,
+  "successful_first_pcm_p50_ms": 441.6412,
+  "successful_first_pcm_p95_ms": 4121.6111,
+  "successful_ready_p50_ms": 441.6412,
+  "successful_ready_p95_ms": 4121.6111,
+  "translation_accuracy_scored": false,
+  "translation_cache_enabled": false,
+  "translation_cache_hits": 0,
+  "translation_domain": "latter_day_saint"
+}

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "models/piper/it_IT-serena-medium.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/it/it_IT/serena/medium/it_IT-serena-medium.onnx",
+      "sha256": "fe4e26b2c1236e2a44d2e295cad564d94a0d8b0a9fca1ccdfd70dd4af3116eb5",
+      "size": 63516051,
+      "license": "Upstream dataset: CC BY 4.0; preserve Serena dataset attribution"
+    },
+    {
+      "path": "models/piper/it_IT-serena-medium.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/it/it_IT/serena/medium/it_IT-serena-medium.onnx.json",
+      "sha256": "14cb4995874138b2792ae07753b5540942124761af9ae6609f9b520f28837881",
+      "size": 5254,
+      "license": "Upstream dataset: CC BY 4.0; preserve Serena dataset attribution"
+    },
+    {
+      "path": "models/piper/it_IT-serena-medium.MODEL_CARD",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/it/it_IT/serena/medium/MODEL_CARD",
+      "sha256": "1d0dbdc0182d19f6510fd3dcd2893587912a65f8cafe6da57754863f168bbe7e",
+      "size": 266,
+      "license": "Upstream dataset: CC BY 4.0; preserve Serena dataset attribution"
+    }
+  ]
+}

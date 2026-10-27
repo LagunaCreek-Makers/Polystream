@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "models/piper/hi_IN-pratham-medium.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/hi/hi_IN/pratham/medium/hi_IN-pratham-medium.onnx",
+      "size": 63516050,
+      "sha256": "169964b0871667f6793416d4b35e97357a68ba1ad01df8580c28048989ee7693",
+      "license": "Upstream dataset CC BY-NC-SA 4.0; retain Pratham model card, training and dataset attribution; intended noncommercial use"
+    },
+    {
+      "path": "models/piper/hi_IN-pratham-medium.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/hi/hi_IN/pratham/medium/hi_IN-pratham-medium.onnx.json",
+      "size": 4970,
+      "sha256": "b68edd2cd7950dd436314013b7cd12e9699e5a3f6fe5af5af94294cf6aa7b9fd",
+      "license": "Upstream dataset CC BY-NC-SA 4.0; retain Pratham model card, training and dataset attribution; intended noncommercial use"
+    },
+    {
+      "path": "models/piper/hi_IN-pratham-medium.MODEL_CARD",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/hi/hi_IN/pratham/medium/MODEL_CARD",
+      "size": 304,
+      "sha256": "89cf491ea99e69b27c94599cecea3f0fc6aeacb30f4ccdb12897f659868df29e",
+      "license": "Upstream dataset CC BY-NC-SA 4.0; retain Pratham model card, training and dataset attribution; intended noncommercial use"
+    }
+  ]
+}

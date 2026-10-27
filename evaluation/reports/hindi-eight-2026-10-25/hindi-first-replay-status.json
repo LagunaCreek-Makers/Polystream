@@ -1,0 +1,66 @@
+{
+  "phase": "completed",
+  "started_utc": "2026-10-25T22:33:24.434263+00:00",
+  "machine": "WORKSTATIONT440",
+  "language_cases": [
+    "hi"
+  ],
+  "logical_processors": 64,
+  "input_seconds": 100.7020625,
+  "cases": [
+    {
+      "case": 1,
+      "threads": 4,
+      "slots": 1,
+      "summary": {
+        "accepted_clauses": 38,
+        "input_seconds": 100.7020625,
+        "music_excluded_seconds": 0.0,
+        "outputs": [
+          {
+            "completed": 38,
+            "language": "hi",
+            "max_seconds": 43.8500635,
+            "median_seconds": 22.1097067,
+            "p95_seconds": 43.5719922
+          }
+        ],
+        "physical_devices_tested": false,
+        "source_passes": 1,
+        "status": "passed",
+        "transcripts": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\hindi-first-replay\\01-threads-4-slots-1\\replay\\Meeting_2026-10-25_15-33-28",
+        "wall_seconds": 143.6153153
+      },
+      "resources": {
+        "system_cpu_percent": {
+          "mean": 10.520765866633763,
+          "max": 19.88666737945044
+        },
+        "system_used_ram_bytes": {
+          "mean": 64481384448.0,
+          "max": 65828528128
+        },
+        "gpu_percent": {
+          "mean": 6.484848484848484,
+          "max": 88.0
+        },
+        "gpu_used_mib": {
+          "mean": 6575.166666666667,
+          "max": 6774.0
+        }
+      },
+      "folder": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\hindi-first-replay\\01-threads-4-slots-1"
+    }
+  ],
+  "updated_utc": "2026-10-25T22:35:55.026419+00:00",
+  "current_case": 1,
+  "threads": 4,
+  "slots": 1,
+  "resources": {
+    "wall_seconds": 145.01599999994505,
+    "system_cpu_percent": 3.827174032240377,
+    "system_used_ram_bytes": 65065578496,
+    "gpu_percent": 1.0,
+    "gpu_used_mib": 6541.0
+  }
+}

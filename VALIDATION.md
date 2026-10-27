@@ -1,3 +1,28 @@
+# Windows meeting buffer validation — 2026-10-23
+
+- Windows Rust all-target suite: 33 passed, run serially.
+- Clippy all targets with warnings denied: passed.
+- Updated Windows desktop executable: built successfully.
+- Real-time CUDA replay of the supplied 100.702-second Title Page recording:
+  Spanish and German each completed all 38 accepted/recognized/translated clauses,
+  drained the backlog, and left zero pending audio. Playback finished at 106.73 s
+  (Spanish) and 106.46 s (German).
+- The desktop Start, music pause, resume, and Finish controls were exercised with a
+  silent physical input. Finish includes a one-second output-device drain allowance.
+- Added tests cover 30 minutes of capacity with another 30 minutes headroom, source
+  retention during inference, old audio without deadline expiry, capacity pause/drain,
+  music-boundary flushing, recovery export, and pending audio after a failed engine.
+
+A parallel suite run on a loaded host had two existing provider timing tests fail;
+all tests passed when rerun serially. A full 30-minute live meeting, acoustic latency,
+and native-speaker accuracy have not been validated by this update. Details and
+retention behavior are in **MEETING_BUFFER.md**; summaries are in
+`evaluation/reports/windows-2026-10-23/buffered-es.json` and `buffered-de.json`.
+
+The release notes below describe prior validation, before live meeting buffering.
+
+---
+
 # v0.5.0 General Conference validation — 2026-10-19
 
 Current checks on Linux x86-64 / Rust 1.99.1:

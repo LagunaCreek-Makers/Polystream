@@ -1,0 +1,9 @@
+# Corrected Russian speech replay — 2026-10-25
+
+101-second English title-page development clip; 4 CPU threads per engine, one GPU translation slot. Russian Denis voice, Qwen3 4B Q4_K_M, Whisper Base. All 38/38 phrases completed; English/Russian SRT cue counts and timestamps aligned. Source phrase start to first queued PCM: median 5.58s, p95 9.13s, max 9.25s. Backlog drain 6.84s. No cutoff/retry, no unmeasured input in this completed attempt. Physical acoustic latency not measured.
+
+Earlier Russian/Basque replay: Russian 38/38, median/p95/max 6.41/11.23/11.44s; Basque audio completed but translation quality failed. The six-stream diagnostic stopped on an incomplete translation at approximately 77 seconds observed input; no completed drain. See sibling report for partial per-language metrics, not an extrapolated full-session result. Italian failed earlier with zero PCM due to unsupported multi-codepoint phonemes; all failed evidence remains in workspace language-rollout.
+
+Stronger Russian terminology guidance corrected the observed Nephi spelling in the full replay (Нефия). Six isolated text-to-speech regression cases also completed; targeted Nephi outputs were Листы Нефия and Нефий писал на листах. These assertions and initial inspection are not a native-speaker quality review. Other clauses still need broader semantic review. Input fragments include ASR imperfections and are not silently repaired by completing known scripture from memory.
+
+Official name reference: https://www.churchofjesuschrist.org/study/scriptures/bofm/bofm-title?lang=rus . Title-page material is development data, not held-out evaluation. Russian remains experimental; sustained Russian operation, broader accuracy and physical routing tests remain pending. Raw audio, SRTs, engine logs and progress are preserved in workspace language-rollout/russian-corrected-replay.

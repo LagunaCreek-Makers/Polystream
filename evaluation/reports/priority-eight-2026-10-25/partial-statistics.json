@@ -1,0 +1,112 @@
+{
+  "status": "failed",
+  "last_consumed_seconds": 56.14,
+  "planned_seconds": 900,
+  "outputs": [
+    {
+      "language": "es",
+      "delivered": 13,
+      "untranslated": 0,
+      "median": 8.4141385,
+      "p95": 10.6354774,
+      "maximum": 10.6354774
+    },
+    {
+      "language": "de",
+      "delivered": 13,
+      "untranslated": 0,
+      "median": 8.2017687,
+      "p95": 10.8471373,
+      "maximum": 10.8471373
+    },
+    {
+      "language": "zh-Hans",
+      "delivered": 13,
+      "untranslated": 0,
+      "median": 6.6451793,
+      "p95": 7.822889,
+      "maximum": 7.822889
+    },
+    {
+      "language": "fr",
+      "delivered": 13,
+      "untranslated": 0,
+      "median": 6.6281898,
+      "p95": 8.0986758,
+      "maximum": 8.0986758
+    },
+    {
+      "language": "ja",
+      "delivered": 13,
+      "untranslated": 0,
+      "median": 5.1087595,
+      "p95": 9.0431037,
+      "maximum": 9.0431037
+    },
+    {
+      "language": "ru",
+      "delivered": 13,
+      "untranslated": 0,
+      "median": 6.4288685,
+      "p95": 9.0555302,
+      "maximum": 9.0555302
+    },
+    {
+      "language": "ar",
+      "delivered": 9,
+      "untranslated": 1,
+      "median": 15.6268848,
+      "p95": 18.2073047,
+      "maximum": 18.2073047
+    },
+    {
+      "language": "hi",
+      "delivered": 13,
+      "untranslated": 0,
+      "median": 6.1856903,
+      "p95": 11.2112265,
+      "maximum": 11.2112265
+    }
+  ],
+  "resources": {
+    "system_cpu_percent": {
+      "mean": 36.79000407002123,
+      "maximum": 78.93420337139749
+    },
+    "system_used_ram_bytes": {
+      "mean": 66042357444.92308,
+      "maximum": 66373779456
+    },
+    "gpu_percent": {
+      "mean": 31.884615384615383,
+      "maximum": 87.0
+    },
+    "gpu_used_mib": {
+      "mean": 6317.384615384615,
+      "maximum": 6556.0
+    }
+  },
+  "srt_counts": {
+    "Arabic_2026-10-25": 10,
+    "English_2026-10-25": 14,
+    "French_2026-10-25": 14,
+    "German_2026-10-25": 13,
+    "Hindi_2026-10-25": 13,
+    "Japanese_2026-10-25": 14,
+    "Mandarin Chinese_2026-10-25": 14,
+    "Russian_2026-10-25": 14,
+    "Spanish_2026-10-25": 14
+  },
+  "failures": [
+    {
+      "clause_id": 8,
+      "delay_seconds": null,
+      "error": "Arabic translation introduced unexpected Cyrillic script; translation rejected",
+      "language": "ar",
+      "source_end_seconds": 36.5,
+      "source_seconds": 33.78,
+      "source_text": "the public service by Bonneville Distribution.",
+      "status": "untranslated"
+    }
+  ]
+}

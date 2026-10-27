@@ -1,0 +1,131 @@
+{
+  "phase": "completed",
+  "started_utc": "2026-10-25T23:56:22.094286+00:00",
+  "machine": "WORKSTATIONT440",
+  "language_cases": [
+    "es,de,zh-Hans,fr,ja,ru,ar,hi"
+  ],
+  "logical_processors": 64,
+  "input_seconds": 70.0,
+  "cases": [
+    {
+      "case": 1,
+      "threads": 4,
+      "slots": 1,
+      "summary": {
+        "accepted_clauses": 18,
+        "input_seconds": 70.0,
+        "music_excluded_seconds": 0.0,
+        "outputs": [
+          {
+            "completed": 17,
+            "handled": 18,
+            "language": "es",
+            "max_seconds": 10.6817506,
+            "median_seconds": 6.3469009,
+            "p95_seconds": 10.6817506,
+            "untranslated": 1
+          },
+          {
+            "completed": 17,
+            "handled": 18,
+            "language": "de",
+            "max_seconds": 10.9986935,
+            "median_seconds": 7.5590432,
+            "p95_seconds": 10.9986935,
+            "untranslated": 1
+          },
+          {
+            "completed": 17,
+            "handled": 18,
+            "language": "zh-Hans",
+            "max_seconds": 9.2077835,
+            "median_seconds": 6.9550038,
+            "p95_seconds": 9.2077835,
+            "untranslated": 1
+          },
+          {
+            "completed": 17,
+            "handled": 18,
+            "language": "fr",
+            "max_seconds": 9.355411,
+            "median_seconds": 7.262151,
+            "p95_seconds": 9.355411,
+            "untranslated": 1
+          },
+          {
+            "completed": 17,
+            "handled": 18,
+            "language": "ja",
+            "max_seconds": 9.2762555,
+            "median_seconds": 4.9675139999999995,
+            "p95_seconds": 9.2762555,
+            "untranslated": 1
+          },
+          {
+            "completed": 17,
+            "handled": 18,
+            "language": "ru",
+            "max_seconds": 9.0784641,
+            "median_seconds": 6.4727264,
+            "p95_seconds": 9.0784641,
+            "untranslated": 1
+          },
+          {
+            "completed": 16,
+            "handled": 18,
+            "language": "ar",
+            "max_seconds": 18.7603423,
+            "median_seconds": 16.6639531,
+            "p95_seconds": 18.7603423,
+            "untranslated": 2
+          },
+          {
+            "completed": 17,
+            "handled": 18,
+            "language": "hi",
+            "max_seconds": 11.3031581,
+            "median_seconds": 6.0040426,
+            "p95_seconds": 11.3031581,
+            "untranslated": 1
+          }
+        ],
+        "physical_devices_tested": false,
+        "source_passes": 1,
+        "status": "completed_with_gaps",
+        "transcripts": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\priority-eight-symbol-regression\\01-threads-4-slots-1\\replay\\Meeting_2026-10-25_16-56-26",
+        "wall_seconds": 86.8524924
+      },
+      "resources": {
+        "system_cpu_percent": {
+          "mean": 28.609783014207977,
+          "max": 72.0339883165162
+        },
+        "system_used_ram_bytes": {
+          "mean": 66439082393.6,
+          "max": 67023220736
+        },
+        "gpu_percent": {
+          "mean": 21.975,
+          "max": 87.0
+        },
+        "gpu_used_mib": {
+          "mean": 6405.5,
+          "max": 6421.0
+        }
+      },
+      "folder": "C:\\Users\\Paul Lott\\Documents\\New project\\language-rollout\\priority-eight-symbol-regression\\01-threads-4-slots-1"
+    }
+  ],
+  "updated_utc": "2026-10-25T23:57:55.621866+00:00",
+  "current_case": 1,
+  "threads": 4,
+  "slots": 1,
+  "resources": {
+    "wall_seconds": 88.04700000002049,
+    "system_cpu_percent": 7.962424513531651,
+    "system_used_ram_bytes": 65475624960,
+    "gpu_percent": 3.0,
+    "gpu_used_mib": 6409.0
+  }
+}

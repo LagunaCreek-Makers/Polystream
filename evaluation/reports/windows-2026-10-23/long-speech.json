@@ -1,0 +1,55 @@
+{
+  "source_sha256": "60e989e9464f5e42354645c0270f42abb1207ad8a589fdc8e271c1332da4f4e4",
+  "languages": {
+    "es": {
+      "cache_enabled": false,
+      "completed_clauses": 26,
+      "error": "Local translation/speech cannot keep up",
+      "input_seconds": 100.7020625,
+      "physical_devices_tested": false,
+      "real_time_paced": true,
+      "status": "failed",
+      "target": "es",
+      "wall_seconds": 82.134043,
+      "last_completed_clause_end_seconds": 72.92,
+      "first_pcm_after_clause_end_median_ms": 2491.8457,
+      "first_pcm_after_clause_end_max_ms": 5976.0943,
+      "mean_recognition_ms": 96.9955423076923,
+      "mean_translation_ms": 188.14092692307693,
+      "generated_audio_seconds": 64.12063492063493,
+      "last_six_clause_delays_ms": [
+        1485.9772,
+        1590.4421,
+        4954.496,
+        5052.0825,
+        5340.066,
+        5976.0943
+      ]
+    },
+    "de": {
+      "cache_enabled": false,
+      "completed_clauses": 38,
+      "error": null,
+      "input_seconds": 100.7020625,
+      "physical_devices_tested": false,
+      "real_time_paced": true,
+      "status": "passed",
+      "target": "de",
+      "wall_seconds": 104.1534251,
+      "last_completed_clause_end_seconds": 100.16,
+      "first_pcm_after_clause_end_median_ms": 2142.7842499999997,
+      "first_pcm_after_clause_end_max_ms": 4277.4969,
+      "mean_recognition_ms": 89.34122368421052,
+      "mean_translation_ms": 175.42727105263157,
+      "generated_audio_seconds": 78.85043083900227,
+      "last_six_clause_delays_ms": [
+        2154.3628,
+        2049.3714999999997,
+        2747.5049,
+        1647.9663,
+        1335.4644,
+        1637.0324
+      ]
+    }
+  }
+}

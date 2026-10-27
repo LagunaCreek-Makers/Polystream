@@ -1,0 +1,78 @@
+[
+  {
+    "case": 1,
+    "outputs": [
+      {
+        "language": "ru",
+        "count": 38,
+        "median": 6.406004149999999,
+        "p95": 11.2289531,
+        "max": 11.4361401
+      },
+      {
+        "language": "eu",
+        "count": 38,
+        "median": 20.32517785,
+        "p95": 36.7703767,
+        "max": 37.8802328
+      }
+    ],
+    "drain": 42.502838100000005,
+    "aligned_srt": true
+  },
+  {
+    "case": 2,
+    "status": "failed-partial",
+    "outputs": [
+      {
+        "language": "es",
+        "count": 22,
+        "median": 6.82007095,
+        "p95": 7.4865144,
+        "max": 7.6358554,
+        "last_measured_source": 57.08
+      },
+      {
+        "language": "de",
+        "count": 23,
+        "median": 5.4198794,
+        "p95": 6.1546561,
+        "max": 6.3594745,
+        "last_measured_source": 60.88
+      },
+      {
+        "language": "fr",
+        "count": 23,
+        "median": 5.79953,
+        "p95": 6.6678517,
+        "max": 7.155527,
+        "last_measured_source": 60.88
+      },
+      {
+        "language": "zh-Hans",
+        "count": 23,
+        "median": 6.1842148,
+        "p95": 7.5085207,
+        "max": 7.5686942,
+        "last_measured_source": 60.88
+      },
+      {
+        "language": "ru",
+        "count": 22,
+        "median": 8.253178850000001,
+        "p95": 9.8077563,
+        "max": 10.2722762,
+        "last_measured_source": 57.08
+      },
+      {
+        "language": "eu",
+        "count": 18,
+        "median": 12.2551008,
+        "p95": 21.0927741,
+        "max": 21.0927741,
+        "last_measured_source": 43.36
+      }
+    ],
+    "drain": null
+  }
+]

@@ -17,11 +17,12 @@ def sha256(path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--download', action='store_true', help='Explicitly download ~2.8 GB from the pinned public sources; no account needed')
+    parser.add_argument('--download', action='store_true', help='Explicitly download the selected pinned model pack; no account needed')
     parser.add_argument('--verify', action='store_true', help='Verify an installed/copied model pack without any network calls')
     parser.add_argument('--destination', type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument('--manifest', type=Path, default=Path(__file__).resolve().parents[1] / 'models-manifest.json')
     args = parser.parse_args()
-    manifest = json.loads((Path(__file__).resolve().parents[1] / 'models-manifest.json').read_text())
+    manifest = json.loads(args.manifest.read_text(encoding='utf-8'))
     total = sum(item['size'] for item in manifest['files'])
     print(f"Model pack: {len(manifest['files'])} files, {total / 1e9:.2f} GB. Native engine programs are separate.")
     failures = 0

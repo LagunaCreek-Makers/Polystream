@@ -1,0 +1,10 @@
+{
+  "current": {
+    "cases": 12,
+    "rejected": 11
+  },
+  "concise": {
+    "cases": 12,
+    "rejected": 5
+  }
+}

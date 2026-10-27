@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "models/piper/ja_JP-hi_fi_captain-medium.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ja/ja_JP/hi_fi_captain/medium/ja_JP-hi_fi_captain-medium.onnx",
+      "size": 76753841,
+      "sha256": "5eafa1610fc7a0ff2e7fde9cbe0972d876266e23d8db331727eb2466f19460eb",
+      "license": "Upstream dataset CC BY-NC-SA 4.0; optional local experimental evaluation, not default distribution"
+    },
+    {
+      "path": "models/piper/ja_JP-hi_fi_captain-medium.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ja/ja_JP/hi_fi_captain/medium/ja_JP-hi_fi_captain-medium.onnx.json",
+      "size": 5301,
+      "sha256": "fe9aeda38318607ba114926d1d7ee7d56295f9af3774a99a42b36f4354cabf27",
+      "license": "Upstream dataset CC BY-NC-SA 4.0; optional local experimental evaluation, not default distribution"
+    },
+    {
+      "path": "models/piper/ja_JP-hi_fi_captain-medium.MODEL_CARD",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ja/ja_JP/hi_fi_captain/medium/MODEL_CARD",
+      "size": 361,
+      "sha256": "26dcad3474c39c7fc394c1e57e60121c90832afa9f43e7942faa7c51e1e81905",
+      "license": "Upstream dataset CC BY-NC-SA 4.0; optional local experimental evaluation, not default distribution"
+    }
+  ]
+}

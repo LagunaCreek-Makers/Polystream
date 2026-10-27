@@ -1,0 +1,15 @@
+{
+  "accepted_clauses": 38,
+  "buffer_minutes": 60,
+  "completed_clauses": 38,
+  "input_seconds": 100.7020625,
+  "peak_oldest_speech_seconds": 10.9014862,
+  "peak_pending_audio_seconds": 10.74,
+  "pending_audio_seconds": 0.0,
+  "physical_devices_tested": false,
+  "recognized_clauses": 38,
+  "status": "passed",
+  "target": "es",
+  "translated_clauses": 38,
+  "wall_seconds": 106.7318742
+}

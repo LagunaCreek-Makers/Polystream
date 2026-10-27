@@ -1,0 +1,424 @@
+{
+  "machine": "WORKSTATIONT440",
+  "device": "cuda",
+  "threads": 4,
+  "slots": 1,
+  "context": 4096,
+  "layers": 99,
+  "translation_model": "models/translation/Qwen3-4B-Q4_K_M.gguf",
+  "whisper_model": "models/whisper/ggml-base.bin",
+  "cases": [
+    {
+      "languages": [
+        "es"
+      ],
+      "median": 5.3390550999999995,
+      "p95": 8.6417559,
+      "max": 8.6611165,
+      "drain_seconds": 6.196767300000005
+    },
+    {
+      "languages": [
+        "es",
+        "de"
+      ],
+      "median": 5.719258549999999,
+      "p95": 9.3115402,
+      "max": 9.3400947,
+      "drain_seconds": 7.117782500000004
+    },
+    {
+      "languages": [
+        "es",
+        "de",
+        "fr"
+      ],
+      "median": 6.0132644,
+      "p95": 9.2534385,
+      "max": 9.27687,
+      "drain_seconds": 7.368517199999999
+    },
+    {
+      "languages": [
+        "es",
+        "de",
+        "fr",
+        "zh-Hans"
+      ],
+      "median": 6.6786619,
+      "p95": 10.8098912,
+      "max": 11.0954127,
+      "drain_seconds": 9.542954300000005
+    }
+  ],
+  "projections": {
+    "5": {
+      "low": 7.3440594,
+      "high": 12.366343899999999,
+      "validated": false
+    },
+    "6": {
+      "low": 8.0094569,
+      "high": 13.922796599999998,
+      "validated": false
+    },
+    "7": {
+      "low": 8.674854400000001,
+      "high": 15.479249299999998,
+      "validated": false
+    },
+    "8": {
+      "low": 9.3402519,
+      "high": 17.035701999999997,
+      "validated": false
+    }
+  },
+  "logical_processors": 64,
+  "gpu_identity": "GPU-fd1966ae-532e-6387-2e8c-c0a6935eea1e, NVIDIA GeForce RTX 5060 Ti, 16311",
+  "file_signatures": [
+    {
+      "key": "translation_model",
+      "path": "models/translation/Qwen3-4B-Q4_K_M.gguf",
+      "bytes": 2497280256,
+      "modified": 1792813924
+    },
+    {
+      "key": "whisper_model",
+      "path": "models/whisper/ggml-base.bin",
+      "bytes": 147951465,
+      "modified": 1792813881
+    },
+    {
+      "key": "es",
+      "path": "models/piper/es_ES-sharvard-medium.onnx",
+      "bytes": 76733615,
+      "modified": 1792813927
+    },
+    {
+      "key": "de",
+      "path": "models/piper/de_DE-thorsten-medium.onnx",
+      "bytes": 63201294,
+      "modified": 1792813930
+    },
+    {
+      "key": "zh-Hans",
+      "path": "models/piper/zh_CN-huayan-medium.onnx",
+      "bytes": 63201294,
+      "modified": 1792859772
+    },
+    {
+      "key": "fr",
+      "path": "models/piper/fr_FR-siwis-medium.onnx",
+      "bytes": 63201294,
+      "modified": 1792945430
+    }
+  ],
+  "failed_language_sets": [
+    {
+      "languages": [
+        "es",
+        "de",
+        "fr",
+        "zh-Hans",
+        "ru",
+        "it",
+        "ja",
+        "hi"
+      ],
+      "reason": "Incomplete translation reached 1024-token output limit; stopped without speaking truncated text",
+      "last_observed_input_seconds": 47.98,
+      "validated": false
+    }
+  ],
+  "recovery_validation": {
+    "languages": [
+      "es",
+      "de",
+      "fr",
+      "zh-Hans",
+      "ru",
+      "it",
+      "ja",
+      "hi"
+    ],
+    "status": "completed_with_gaps",
+    "delivered": 303,
+    "untranslated": 1,
+    "max_seconds": 28.2159264,
+    "drain_seconds": 26.1778497,
+    "short_replay_seconds": 100.7020625
+  },
+  "priority_eight_sustained_validation": {
+    "status": "completed_with_gaps",
+    "outputs": [
+      {
+        "language": "es",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 11.5980545,
+        "p95": 29.8135604,
+        "max": 41.4306567,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "de",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 13.194323449999999,
+        "p95": 29.2392792,
+        "max": 37.9019092,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "zh-Hans",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 7.4589538,
+        "p95": 24.966442,
+        "max": 37.6948474,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "fr",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 17.6657934,
+        "p95": 31.8476556,
+        "max": 39.8322647,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "ja",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 6.690751349999999,
+        "p95": 26.5412863,
+        "max": 40.0157211,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "ru",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 23.0640389,
+        "p95": 37.1729549,
+        "max": 44.567053,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "ar",
+        "delivered": 291,
+        "untranslated": 10,
+        "median": 57.0892506,
+        "p95": 77.7144741,
+        "max": 84.9587189,
+        "missing_clause_ids": [
+          13,
+          41,
+          129,
+          171,
+          198,
+          238,
+          254,
+          266,
+          274,
+          280
+        ]
+      },
+      {
+        "language": "hi",
+        "delivered": 297,
+        "untranslated": 4,
+        "median": 5.049047,
+        "p95": 13.578934,
+        "max": 19.443506,
+        "missing_clause_ids": [
+          13,
+          157,
+          221,
+          230
+        ]
+      }
+    ],
+    "drain_seconds": 63.00611730000003,
+    "input_seconds": 900,
+    "accepted_clauses": 301,
+    "audio_deliveries": 2388,
+    "untranslated_count": 20,
+    "resources": {
+      "system_cpu_percent": {
+        "mean": 40.76095109048754,
+        "max": 86.72361067172835
+      },
+      "system_used_ram_bytes": {
+        "mean": 52433846421.62557,
+        "max": 56050974720
+      },
+      "gpu_percent": {
+        "mean": 30.970319634703195,
+        "max": 92.0
+      },
+      "gpu_used_mib": {
+        "mean": 6029.821917808219,
+        "max": 6753.0
+      }
+    },
+    "maximum_sampled_pending_source_age_seconds": 84.9804233,
+    "cutoffs": 0,
+    "retries": 0,
+    "languages": [
+      "es",
+      "de",
+      "zh-Hans",
+      "fr",
+      "ja",
+      "ru",
+      "ar",
+      "hi"
+    ],
+    "threads": 4,
+    "translation_slots": 1,
+    "native_accuracy_validated": false,
+    "report": "evaluation/reports/priority-eight-2026-10-25/sustained-15min/fault-tolerance-report.md",
+    "note": "Historical measured result for this exact 15-minute soundtrack; not a universal delay projection. Existing UI calibration guards remain unchanged."
+  },
+  "qwen8b_priority_eight_sustained_validation": {
+    "status": "completed_with_gaps",
+    "outputs": [
+      {
+        "language": "es",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 9.714682750000001,
+        "p95": 30.9991297,
+        "max": 33.5219472,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "de",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 12.2198931,
+        "p95": 28.365906,
+        "max": 35.138257,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "zh-Hans",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 9.9799741,
+        "p95": 29.1648381,
+        "max": 37.7777291,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "fr",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 17.36624645,
+        "p95": 33.995381,
+        "max": 36.2223146,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "ja",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 12.66681435,
+        "p95": 39.2905453,
+        "max": 45.3548476,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "ru",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 27.088954100000002,
+        "p95": 44.4002882,
+        "max": 47.4249999,
+        "missing_clause_ids": [
+          13
+        ]
+      },
+      {
+        "language": "ar",
+        "delivered": 298,
+        "untranslated": 3,
+        "median": 70.39835805,
+        "p95": 91.9149386,
+        "max": 96.6442072,
+        "missing_clause_ids": [
+          13,
+          71,
+          261
+        ]
+      },
+      {
+        "language": "hi",
+        "delivered": 300,
+        "untranslated": 1,
+        "median": 5.6572726,
+        "p95": 16.571003,
+        "max": 19.1273098,
+        "missing_clause_ids": [
+          13
+        ]
+      }
+    ],
+    "drain_seconds": 77.82647069999996,
+    "input_seconds": 900,
+    "accepted_clauses": 301,
+    "audio_deliveries": 2398,
+    "untranslated_count": 10,
+    "resources": {
+      "system_cpu_percent": {
+        "mean": 38.74072861718018,
+        "max": 79.30029154518951
+      },
+      "system_used_ram_bytes": {
+        "mean": 52434847583.64206,
+        "max": 54450262016
+      },
+      "gpu_percent": {
+        "mean": 44.064876957494405,
+        "max": 93.0
+      },
+      "gpu_used_mib": {
+        "mean": 7749.404921700224,
+        "max": 8259.0
+      }
+    },
+    "maximum_sampled_pending_source_age_seconds": 97.3802369,
+    "cutoffs": 0,
+    "retries": 0,
+    "model": "Qwen3-8B-Q4_K_M.gguf",
+    "threads": 4,
+    "translation_slots": 1,
+    "native_accuracy_validated": false,
+    "report": "evaluation/reports/qwen8b-sustained-2026-10-25/model-comparison-report.md",
+    "note": "Historical exact-run evidence; does not update UI calibration or default model. Predates narrow doctrinal-term prompt change."
+  }
+}

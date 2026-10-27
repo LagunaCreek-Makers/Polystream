@@ -1,0 +1,116 @@
+{
+  "machine": "WORKSTATIONT440",
+  "device": "cuda",
+  "threads": 4,
+  "slots": 1,
+  "context": 4096,
+  "layers": 99,
+  "translation_model": "models/translation/Qwen3-4B-Q4_K_M.gguf",
+  "whisper_model": "models/whisper/ggml-base.bin",
+  "cases": [
+    {
+      "languages": [
+        "es"
+      ],
+      "median": 5.3390550999999995,
+      "p95": 8.6417559,
+      "max": 8.6611165,
+      "drain_seconds": 6.196767300000005
+    },
+    {
+      "languages": [
+        "es",
+        "de"
+      ],
+      "median": 5.719258549999999,
+      "p95": 9.3115402,
+      "max": 9.3400947,
+      "drain_seconds": 7.117782500000004
+    },
+    {
+      "languages": [
+        "es",
+        "de",
+        "fr"
+      ],
+      "median": 6.0132644,
+      "p95": 9.2534385,
+      "max": 9.27687,
+      "drain_seconds": 7.368517199999999
+    },
+    {
+      "languages": [
+        "es",
+        "de",
+        "fr",
+        "zh-Hans"
+      ],
+      "median": 6.6786619,
+      "p95": 10.8098912,
+      "max": 11.0954127,
+      "drain_seconds": 9.542954300000005
+    }
+  ],
+  "projections": {
+    "5": {
+      "low": 7.3440594,
+      "high": 12.366343899999999,
+      "validated": false
+    },
+    "6": {
+      "low": 8.0094569,
+      "high": 13.922796599999998,
+      "validated": false
+    },
+    "7": {
+      "low": 8.674854400000001,
+      "high": 15.479249299999998,
+      "validated": false
+    },
+    "8": {
+      "low": 9.3402519,
+      "high": 17.035701999999997,
+      "validated": false
+    }
+  },
+  "logical_processors": 64,
+  "gpu_identity": "GPU-fd1966ae-532e-6387-2e8c-c0a6935eea1e, NVIDIA GeForce RTX 5060 Ti, 16311",
+  "file_signatures": [
+    {
+      "key": "translation_model",
+      "path": "models/translation/Qwen3-4B-Q4_K_M.gguf",
+      "bytes": 2497280256,
+      "modified": 1792813924
+    },
+    {
+      "key": "whisper_model",
+      "path": "models/whisper/ggml-base.bin",
+      "bytes": 147951465,
+      "modified": 1792813881
+    },
+    {
+      "key": "es",
+      "path": "models/piper/es_ES-sharvard-medium.onnx",
+      "bytes": 76733615,
+      "modified": 1792813927
+    },
+    {
+      "key": "de",
+      "path": "models/piper/de_DE-thorsten-medium.onnx",
+      "bytes": 63201294,
+      "modified": 1792813930
+    },
+    {
+      "key": "zh-Hans",
+      "path": "models/piper/zh_CN-huayan-medium.onnx",
+      "bytes": 63201294,
+      "modified": 1792859772
+    },
+    {
+      "key": "fr",
+      "path": "models/piper/fr_FR-siwis-medium.onnx",
+      "bytes": 63201294,
+      "modified": 1792945430
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 //! Session-owned lifecycle and playback state; independent of UI notification delivery.
+use crate::levels::{AudioLevel, GainRamp, SampleMeter};
 use anyhow::{bail, Result};
 use std::{
     collections::VecDeque,
     sync::{
-        atomic::{AtomicBool, AtomicU64, AtomicUsize, Ordering},
-        Mutex,
+        atomic::{AtomicBool, AtomicU32, AtomicU64, AtomicUsize, Ordering},
+        Arc, Mutex,
     },
     thread,
     time::{Duration, Instant},
@@ -18,8 +19,23 @@ pub struct SessionControl {
     wake: Notify,
     pub text_jobs: AtomicUsize,
     first_audio_us: AtomicU64,
+    pub capture_paused: AtomicBool,
+    pub capture_finished: AtomicBool,
+    pub capture_epoch: AtomicU64,
 }
 impl SessionControl {
+    pub fn pause_capture(&self, paused: bool) {
+        if !self.capture_finished.load(Ordering::Acquire)
+            && self.capture_paused.swap(paused, Ordering::AcqRel) != paused
+        {
+            self.capture_epoch.fetch_add(1, Ordering::AcqRel);
+        }
+    }
+    pub fn finish_capture(&self) {
+        self.capture_finished.store(true, Ordering::Release);
+        self.capture_paused.store(true, Ordering::Release);
+        self.capture_epoch.fetch_add(1, Ordering::AcqRel);
+    }
     pub fn is_stopped(&self) -> bool {
         self.stopped.load(Ordering::Acquire)
     }
@@ -68,19 +84,77 @@ impl SessionControl {
 }
 
 pub struct PlaybackBuffer {
+    level: Arc<AudioLevel>,
+    current_gain: AtomicU32,
     queue: Mutex<VecDeque<f32>>,
     rate: u32,
     capacity: usize,
     stall_timeout: Duration,
 }
+#[cfg(test)]
+mod routing_tests {
+    use super::*;
+    #[test]
+    fn volume_applies_to_already_queued_audio_and_muted_output_still_drains() {
+        let c = SessionControl::default();
+        let level = Arc::new(AudioLevel::default());
+        let q = PlaybackBuffer::with_level(1000, level.clone());
+        q.push(&[1.; 20], &c).unwrap();
+        level.set_volume(0.5);
+        let mut first = [0.; 10];
+        q.render(&mut first, 1, 0, &c, |s| s);
+        assert_eq!(first[9], 0.5);
+        assert!(first[0] > 0.5);
+        assert_eq!(level.peak(), first[0]);
+        level.set_muted(true);
+        let mut second = [1.; 10];
+        q.render(&mut second, 1, 0, &c, |s| s);
+        assert_eq!(second[9], 0.);
+        assert_eq!(q.seconds(), 0.);
+        q.render(&mut second, 1, 0, &c, |s| s);
+        assert_eq!(level.rms(), 0.);
+        level.set_muted(false);
+        q.push(&[1.; 10], &c).unwrap();
+        c.stop();
+        q.render(&mut second, 1, 0, &c, |s| s);
+        assert_eq!(second, [0.; 10]);
+        assert_eq!(level.peak(), 0.);
+    }
+    #[test]
+    fn two_routes_preserve_distinct_interleaved_channels_and_stop_silences_both() {
+        let c = SessionControl::default();
+        let left = PlaybackBuffer::new(16000);
+        let right = PlaybackBuffer::new(16000);
+        left.push(&[0.1, 0.2], &c).unwrap();
+        right.push(&[-0.3, -0.4], &c).unwrap();
+        let mut output = [0.; 4];
+        left.render_channel(&mut output, 2, 0, &c, |v| v);
+        right.render_channel(&mut output, 2, 1, &c, |v| v);
+        assert_eq!(output, [0.1, -0.3, 0.2, -0.4]);
+        c.stop();
+        left.render_channel(&mut output, 2, 0, &c, |v| v);
+        right.render_channel(&mut output, 2, 1, &c, |v| v);
+        assert_eq!(output, [0.; 4]);
+    }
+}
 impl PlaybackBuffer {
     pub fn new(rate: u32) -> Self {
-        Self::with_stall_timeout(rate, Duration::from_secs(2))
+        Self::with_level(rate, Arc::new(AudioLevel::default()))
+    }
+    pub fn with_level(rate: u32, level: Arc<AudioLevel>) -> Self {
+        let mut buffer = Self::with_stall_timeout(rate, Duration::from_secs(2));
+        buffer
+            .current_gain
+            .store(level.gain().to_bits(), Ordering::Relaxed);
+        buffer.level = level;
+        buffer
     }
     fn with_stall_timeout(rate: u32, stall_timeout: Duration) -> Self {
         assert!(rate > 0);
         let capacity = (rate as usize * 4 / 5).max(1);
         Self {
+            level: Arc::new(AudioLevel::default()),
+            current_gain: AtomicU32::new(1f32.to_bits()),
             queue: Mutex::new(VecDeque::with_capacity(capacity)),
             rate,
             capacity,
@@ -129,8 +203,56 @@ impl PlaybackBuffer {
         }
         control.check()
     }
-    /// CPAL callback uses a try-lock and always emits silence after cancellation.
-    /// The caller provides channel conversion; no heap allocation in this method.
+    fn render_route<T>(
+        &self,
+        data: &mut [T],
+        channels: usize,
+        selected: usize,
+        control: &SessionControl,
+        convert: impl Fn(f32) -> T,
+        clear_others: bool,
+    ) {
+        let mut queue = if control.is_stopped() {
+            None
+        } else {
+            self.queue.try_lock().ok()
+        };
+        let mut meter = SampleMeter::default();
+        let mut ramp = GainRamp::new(
+            f32::from_bits(self.current_gain.load(Ordering::Relaxed)),
+            self.level.gain(),
+            self.rate,
+        );
+        for frame in data.chunks_exact_mut(channels) {
+            let raw = if control.is_stopped() {
+                0.
+            } else {
+                queue.as_mut().and_then(|q| q.pop_front()).unwrap_or(0.)
+            };
+            let value = meter.process(raw, ramp.advance());
+            if clear_others {
+                for sample in frame.iter_mut() {
+                    *sample = convert(0.);
+                }
+            }
+            frame[selected] = convert(value);
+        }
+        self.current_gain
+            .store(ramp.current().to_bits(), Ordering::Relaxed);
+        self.level.publish(&meter);
+    }
+    /// Fill one route, preserving all other interleaved device channels.
+    pub fn render_channel<T>(
+        &self,
+        data: &mut [T],
+        channels: usize,
+        selected: usize,
+        control: &SessionControl,
+        convert: impl Fn(f32) -> T,
+    ) {
+        self.render_route(data, channels, selected, control, convert, false);
+    }
+    /// Single-route callback; other device channels are silent.
     pub fn render<T>(
         &self,
         data: &mut [T],
@@ -139,21 +261,7 @@ impl PlaybackBuffer {
         control: &SessionControl,
         convert: impl Fn(f32) -> T,
     ) {
-        let mut queue = if control.is_stopped() {
-            None
-        } else {
-            self.queue.try_lock().ok()
-        };
-        for frame in data.chunks_exact_mut(channels) {
-            let value = if control.is_stopped() {
-                0.0
-            } else {
-                queue.as_mut().and_then(|q| q.pop_front()).unwrap_or(0.0)
-            };
-            for (index, sample) in frame.iter_mut().enumerate() {
-                *sample = convert(if index == selected { value } else { 0.0 });
-            }
-        }
+        self.render_route(data, channels, selected, control, convert, true);
     }
 }
 

@@ -1,0 +1,14 @@
+{
+  "English_2026-10-24.srt": {
+    "cues": 638,
+    "timestamps_match_english_prefix": true
+  },
+  "German_2026-10-24.srt": {
+    "cues": 608,
+    "timestamps_match_english_prefix": true
+  },
+  "Spanish_2026-10-24.srt": {
+    "cues": 606,
+    "timestamps_match_english_prefix": true
+  }
+}
